@@ -1,0 +1,307 @@
+:root {
+    --color_blue: blue;
+    --color_white: white;
+    --color_oragn: #FF9C00;
+    --color_black: black;
+}
+
+body {
+    text-transform: capitalize;
+    overflow-x: hidden;
+}
+
+/* start header */
+.h1_bold {
+    font-weight: bold;
+}
+
+.section_header {
+    background-color: black;
+    padding-bottom: 200px;
+    transform: skewY(-5deg);
+    background: -webkit-linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+    background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+    margin-top: -4.4%;
+    padding-top: 4.4%;
+}
+
+.section_header .div_skewY {
+    transform: skewY(5deg);
+}
+
+section nav .container .div_left .img_bottom,
+section nav .container .div_flex2 img {
+    position: absolute;
+    top: -120px;
+}
+
+section nav .container .div_left .div_flex1 {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+section nav .container .div_left .div_flex1 a {
+    color: var(--color_white);
+    text-decoration: none;
+}
+
+section nav .container .div_left .div_flex1 a:hover {
+    color: var(--color_oragn);
+}
+
+section nav .container .collapse .css_navbar {
+    display: flex;
+    gap: 15px;
+}
+
+section nav .container .collapse .css_navbar li .active {
+    color: var(--color_oragn);
+}
+
+section nav .container .collapse .css_navbar li a {
+    color: var(--color_white);
+}
+
+section nav .container .collapse .css_navbar li a:hover {
+    color: var(--color_oragn);
+}
+
+.btn {
+    background-color: var(--color_oragn);
+    color: var(--color_white);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: var(--color_white);
+    background-color: var(--color_black);
+}
+
+.container .row .div_image .my_image {
+    width: 300%;
+    position: relative;
+}
+
+.section_header .div_skewY .my_container {
+    margin-top: 150px;
+}
+
+.section_header .div_skewY .my_container .row .my_center h1 .image_smoll1,
+.section_header .image_smoll2 {
+    position: absolute;
+}
+
+.section_header .div_skewY .my_container .row .my_center h1 .image_smoll1 {
+    width: 50px;
+    margin-left: -65px;
+}
+
+.section_header .image_smoll2 {
+    margin-left: 65px;
+    width: 100px;
+    transform: skewX(5deg);
+}
+
+.section_header .div_skewY .my_container .row .div_image .div_flex3 div .image_smoll3 {
+    margin-top: -30px;
+    width: 100px;
+}
+
+.section_header .div_skewY .my_container .row .div_image .div_flex3 {
+    display: flex;
+    gap: 300px;
+}
+
+.section_header .div_skewY .my_container .row .div_image .div_flex3 div .image_smoll5 {
+    margin-top: 200px;
+}
+
+/* end header */
+/* start our */
+.section_margin {
+    margin-top: 8%;
+}
+
+.section_margin .div_our {
+    text-align: center;
+}
+
+.div_my_margin {
+    margin-top: 70px;
+}
+
+.p_color {
+    color: dimgray;
+}
+
+.section_margin .container .row div .icon {
+    background-color: rgb(249, 241, 227);
+    padding: 6%;
+    border-radius: 50%;
+    color: var(--color_oragn);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.section_margin .container .row div .icon:hover {
+    color: var(--color_white);
+    background-color: red;
+}
+
+.div_flex4 {
+    display: flex;
+}
+
+.div_flex4 .my_icon {
+    color: dimgray;
+    margin-top: 5px;
+}
+
+.p_bold {
+    font-weight: bold;
+}
+
+/* end our */
+/* start help */
+.section_help div div {
+    margin-top: 20px;
+}
+
+.section_help .container .image_pos {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    left: 0%;
+}
+
+.section_help .container .row .div_right img {
+    width: 80%;
+}
+
+/* end help */
+/* start interested */
+.section_interested .container .row div {
+    margin-top: 100px;
+}
+
+.section_interested .container .row div .image_mysmoll {
+    width: 65%;
+}
+
+.section_interested .container .row form {
+    display: flex;
+}
+
+.section_interested .container .row form .input_email {
+    text-transform: capitalize;
+    width: 80%;
+    height: 50px;
+    border: 2px solid #ccc;
+    background-color: #eaeaea;
+    padding-left: 10px;
+}
+
+.section_interested .container .row form .btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -60px;
+}
+
+/* end interested */
+/* start ourlatest */
+.section_ourlatest {
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    background: -webkit-linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+    background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+    color: var(--color_white);
+}
+
+.section_ourlatest .container .row .div_show img {
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.section_ourlatest .container .row .div_show img:hover {
+    -webkit-box-shadow: 40px -10px #417EAC;
+}
+
+.section_ourlatest .container .row .div_show .flex_color p,
+.section_ourlatest .container .row .div_show .flex_color .icon {
+    color: var(--color_oragn);
+}
+
+/* end ourlatest */
+/* start media */
+@media (max-width: 991px) and (min-width: 0px) {
+
+    .section_header {
+        padding-bottom: 100px;
+    }
+
+    section nav .container .div_left .img_bottom,
+    section nav .container .div_flex2 img,
+    .section_header .div_skewY .my_container .row .div_image .div_flex3 div .image_smoll4,
+    .section_header .div_skewY .my_container .row .div_image .div_flex3 div .image_smoll5 {
+        display: none;
+    }
+
+    section nav .container .collapse .css_navbar {
+        border-radius: 6px;
+        margin-top: 20px;
+        text-align: center;
+        width: 90%;
+        background-color: var(--color_black);
+    }
+
+    .section_header .div_skewY .container .row .my_center,
+    .section_margin,
+    .section_help,
+    .section_interested,
+    .section_ourlatest .container .row .div_show {
+        text-align: center;
+    }
+
+    .div_flex4 {
+        justify-content: center;
+    }
+
+    .container .row .div_image .my_image,
+    .section_help .container .row .div_right img,
+    .section_interested .container .row div .image_mysmoll {
+        width: 100%;
+    }
+
+    .section_header .div_skewY .my_container .row .div_image .div_flex3 {
+        margin-top: 50px;
+        gap: 0px;
+    }
+
+    .section_margin .div_my_margin {
+        margin-top: 10px;
+    }
+
+    .section_interested .container .row form {
+        flex-direction: column;
+    }
+
+    .section_interested .container .row form .input_email,
+    .section_interested .container .row form .btn {
+        width: 100%;
+    }
+
+    .section_interested .container .row form .btn {
+        margin-top: 21px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+/* end media */
