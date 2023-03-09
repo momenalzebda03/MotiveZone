@@ -190,11 +190,13 @@ section nav .container .collapse .css_navbar li a:hover {
     width: 65%;
 }
 
-.section_interested .container .row form {
+.section_interested .container .row .my_form1,
+.section_footer .container .row div .my_form2 {
     display: flex;
 }
 
-.section_interested .container .row form .input_email {
+.section_interested .container .row .my_form1 .input_email,
+.section_footer .container .row div .my_form2 .input_email1 {
     text-transform: capitalize;
     width: 80%;
     height: 50px;
@@ -203,7 +205,7 @@ section nav .container .collapse .css_navbar li a:hover {
     padding-left: 10px;
 }
 
-.section_interested .container .row form .btn {
+.section_interested .container .row .my_form1 .btn {
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -60px;
@@ -291,6 +293,58 @@ section nav .container .collapse .css_navbar li a:hover {
     color: #9BA4AE;
 }
 
+.section_footer .container .row div .my_form2 .btn1 {
+    margin-top: -2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #1B498A;
+    color: var(--color_white);
+    transition: 0.5s;
+}
+
+.section_footer .container .row div .my_form2 .btn1:hover {
+    background-color: red;
+}
+
+.section_footer .container .row .div_flex_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section_footer .container .row .div_flex_footer a,
+.section_footer .container .row .div_start_flex a {
+    text-decoration: none;
+}
+
+.section_footer .container .row .div_flex_footer a:hover,
+.section_footer .container .row .div_start_flex a:hover {
+    color: var(--color_oragn);
+}
+
+.section_footer .container .row .div_start_flex {
+    display: flex;
+    gap: 20px;
+}
+
+.section_footer .container .row div .icon {
+    padding: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.section_footer .container .row div .icon:hover {
+    transform: rotate(360deg);
+}
+
+.section_footer .container .row div p span {
+    color: var(--color_oragn);
+}
+
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
@@ -318,7 +372,8 @@ section nav .container .collapse .css_navbar li a:hover {
     .section_margin,
     .section_help,
     .section_interested,
-    .section_ourlatest .container .row .div_show {
+    .section_ourlatest .container .row .div_show,
+    .section_footer .container .row .div_flex_footer {
         text-align: center;
     }
 
@@ -341,16 +396,16 @@ section nav .container .collapse .css_navbar li a:hover {
         margin-top: 10px;
     }
 
-    .section_interested .container .row form {
+    .section_interested .container .row .my_form1 {
         flex-direction: column;
     }
 
-    .section_interested .container .row form .input_email,
-    .section_interested .container .row form .btn {
+    .section_interested .container .row .my_form1 .input_email,
+    .section_interested .container .row .my_form1 .btn {
         width: 100%;
     }
 
-    .section_interested .container .row form .btn {
+    .section_interested .container .row .my_form1 .btn {
         margin-top: 21px;
         padding-left: 0px;
         padding-right: 0px;
