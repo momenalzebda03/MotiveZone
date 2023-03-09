@@ -35,18 +35,18 @@ section nav .container .div_flex2 img {
     top: -120px;
 }
 
-section nav .container .div_left .div_flex1 {
+.div_flex1 {
     position: relative;
     display: flex;
     gap: 10px;
 }
 
-section nav .container .div_left .div_flex1 a {
+.div_flex1 a {
     color: var(--color_white);
     text-decoration: none;
 }
 
-section nav .container .div_left .div_flex1 a:hover {
+.div_flex1 a:hover {
     color: var(--color_oragn);
 }
 
@@ -238,6 +238,60 @@ section nav .container .collapse .css_navbar li a:hover {
 }
 
 /* end ourlatest */
+/* start carla */
+.section_carla .container .row div .image_wone {
+    margin-top: -100px;
+}
+
+.section_carla .container .row div .point_loop {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: -80px;
+    margin-top: -45px;
+    color: var(--color_oragn);
+}
+
+.section_carla .container .row div .div_flex5 {
+    display: flex;
+    gap: 40px;
+}
+
+.container .row div .carousel .div_louk_margin {
+    display: flex;
+    gap: 20px;
+}
+
+.container .row div .carousel .div_louk_margin span {
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid blue;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--color_oragn);
+    font-size: 20px;
+}
+
+.container .row div .carousel span:hover {
+    background-color: var(--color_oragn);
+    color: var(--color_white);
+}
+
+/* end carla */
+/* start footer */
+.section_footer {
+    background-color: #021121;
+    padding-bottom: 40px;
+    color: var(--color_white);
+}
+
+.section_footer .container .row div .p_my_color {
+    color: #9BA4AE;
+}
+
+/* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
 
@@ -301,6 +355,19 @@ section nav .container .collapse .css_navbar li a:hover {
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 0px;
+    }
+
+    .section_carla {
+        text-align: center;
+    }
+
+    .section_carla .container .row div .image_wone {
+        width: 100%;
+    }
+
+    .container .row div .carousel .div_louk_margin {
+        display: flex;
+        justify-content: center;
     }
 }
 
