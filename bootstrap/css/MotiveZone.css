@@ -32,39 +32,40 @@ body .section_soper {
   background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
 }
 
-section nav .container .div_left .img_bottom,
-section nav .container .div_flex2 img {
+body section nav .container .div_left .img_bottom,
+body section nav .container .div_flex2 img {
   position: absolute;
   top: -142px;
 }
 
-.div_flex1 a {
+body .div_flex1 a {
   color: var(--color_white);
   text-decoration: none;
 }
 
-.div_flex1 a:hover {
-  color: var(--color_oragn);
+body .div_flex1 a:hover,
+body .div_flex1:hover {
+  color: var(--color_oragn) !important;
 }
 
-section nav {
+body section nav {
   z-index: 2;
 }
 
-section nav .container .collapse .css_navbar {
+body section nav .container .collapse .css_navbar {
   display: flex;
   gap: 15px;
 }
 
-section nav .container .collapse .css_navbar li .active {
+body section nav .container .collapse .css_navbar li .active {
   color: var(--color_oragn);
 }
 
-section nav .container .collapse .css_navbar li a {
+body section nav .container .collapse .css_navbar li a {
   color: var(--color_white);
 }
 
-section nav .container .collapse .css_navbar li a:hover {
+body section nav .container .collapse .css_navbar li a:hover {
   color: var(--color_oragn);
 }
 
@@ -107,52 +108,47 @@ body .section_soper div .row .div_image .div_flex3 div .image_smoll5 {
 
 /* end header */
 /* start our */
-.p_hover:hover {
-  color: var(--color_black) !important;
-}
-
-.section_margin {
+body main .section_margin {
   margin-top: 8%;
 }
 
-.section_margin .div_our {
+body main .section_margin .container .row div a .p_hover:hover {
+  color: var(--color_black) !important;
+}
+
+body main .section_margin .div_our {
   text-align: center;
 }
 
-.section_margin .row div .icon {
+body main .section_margin .row div .icon {
   background-color: rgb(249, 241, 227);
   color: var(--color_oragn);
   transition: 0.5s;
   cursor: pointer;
 }
 
-.section_margin .row div .icon:hover {
+body main .section_margin .row div .icon:hover {
   color: var(--color_white);
   background-color: red;
 }
 
 /* end our */
 /* start help */
-.div_nth:nth-child(even) {
+body main .section_help .container .div_nth:nth-child(even) {
   flex-direction: row;
 }
 
-.div_nth:nth-child(odd) {
+body main .section_help .container .div_nth:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
 /* end help */
 /* start interested */
-.section_interested .container .row div {
-  margin-top: 100px;
-}
-
-.section_footer .container .row div .my_form2 {
+body main .section_footer .container .row div .my_form2 {
   display: flex;
 }
 
-.my_form1 .input_email,
-.section_footer .container .row div .my_form2 .input_email1 {
+body main .section_footer .container .row div .my_form2 .input_email1 {
   text-transform: capitalize;
   width: 80%;
   height: 50px;
@@ -163,33 +159,33 @@ body .section_soper div .row .div_image .div_flex3 div .image_smoll5 {
 
 /* end interested */
 /* start ourlatest */
-body .section_ourlatest .container #click_scroll {
+body main .section_ourlatest .container #click_scroll {
   cursor: col-resize;
 }
 
-.section_ourlatest {
+body main .section_ourlatest {
   background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
   color: var(--color_white);
 }
 
-.section_ourlatest .container .row .div_show img {
+body main .section_ourlatest .container .row .div_show img {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
   width: 100%;
 }
 
-.section_ourlatest .container div .div_show .flex_color {
+body main .section_ourlatest .container div .div_show .flex_color {
   color: var(--color_oragn);
 }
 
 /* end ourlatest */
 /* start carla */
-.section_carla .container .row div .image_wone {
+body main .section_carla .container .row div .image_wone {
   margin-top: -100px;
 }
 
-.section_carla .container .row div .point_loop {
+body main .section_carla .container .row div .point_loop {
   font-weight: bold;
   font-size: 30px;
   margin-left: -80px;
@@ -197,7 +193,7 @@ body .section_ourlatest .container #click_scroll {
   color: var(--color_oragn);
 }
 
-.section_carla .container .row div .div_flex5 {
+body main .section_carla .container .row div .div_flex5 {
   display: flex;
   gap: 40px;
 }
@@ -207,11 +203,11 @@ body .section_ourlatest .container #click_scroll {
   color: var(--color_white);
 }
 
-body .section_carla div div div .row div div div .p_back {
+body main .section_carla div div div .row div div div .p_back {
   border: 2px solid var(--color_oragn);
 }
 
-body .section_carla div div div .row div div div .p_back:hover {
+body main .section_carla div div div .row div div div .p_back:hover {
   cursor: pointer;
   background-color: var(--color_blue);
   color: var(--color_white);
@@ -219,17 +215,17 @@ body .section_carla div div div .row div div div .p_back:hover {
 
 /* end carla */
 /* start footer */
-.section_footer {
+body main .section_footer {
   background-color: #021121;
   padding-bottom: 40px;
   color: var(--color_white);
 }
 
-.section_footer .container .row div .p_my_color {
+body main .section_footer .container .row div .p_my_color {
   color: #9ba4ae;
 }
 
-.section_footer .container .row div .my_form2 .btn1 {
+body main .section_footer .container .row div .my_form2 .btn1 {
   margin-top: -2px;
   padding-left: 15px;
   padding-right: 15px;
@@ -241,40 +237,33 @@ body .section_carla div div div .row div div div .p_back:hover {
   transition: 0.5s;
 }
 
-.section_footer .container .row div .my_form2 .btn1:hover {
+body main .section_footer .container .row div .my_form2 .btn1:hover {
   background-color: red;
 }
 
-.section_footer .container .row .div_flex_footer a,
-.section_footer .container .row .div_start_flex a {
+body main .section_footer .container .row .div_flex_footer a {
   text-decoration: none;
 }
 
-.section_footer .container .row .div_flex_footer .tag_hover:hover {
+body main .section_footer .container .row .tag_hover:hover {
   color: var(--color_oragn) !important;
 }
 
-.section_footer .container .row .div_flex_footer a:hover,
-.section_footer .container .row .div_start_flex a:hover {
+body main .section_footer .container .row .div_flex_footer a:hover {
   color: var(--color_oragn);
 }
 
-.section_footer .container .row .div_start_flex {
-  display: flex;
-  gap: 20px;
-}
-
-.section_footer .container .row div .icon {
+body main .section_footer .container .row div .icon {
   padding: 10px;
   transition: 1s;
   cursor: pointer;
 }
 
-.section_footer .container .row div .icon:hover {
+body main .section_footer .container .row div .icon:hover {
   transform: rotate(360deg);
 }
 
-.section_footer .container .row div p span {
+body main .section_footer .container .row div p span {
   color: var(--color_oragn);
 }
 
@@ -306,7 +295,6 @@ body .section_carla div div div .row div div div .p_back:hover {
   .section_soper div .container .row .my_center,
   .section_margin,
   .section_help,
-  .section_interested,
   .section_ourlatest .container .row .div_show,
   .section_footer .container .row .div_flex_footer {
     text-align: center;
@@ -321,21 +309,8 @@ body .section_carla div div div .row div div div .p_back:hover {
     gap: 0px;
   }
 
-  .section_interested .container .row .my_form1 {
-    flex-direction: column;
-  }
-
-  body .section_soper div .row .my_center .p_width,
-  .section_interested .container .row .my_form1 .input_email,
-  .section_interested .container .row .my_form1 .btn {
+  body .section_soper div .row .my_center .p_width {
     width: 100% !important;
-  }
-
-  .section_interested .container .row .my_form1 .btn {
-    margin-top: 21px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
   }
 
   .section_carla {
