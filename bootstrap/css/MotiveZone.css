@@ -250,6 +250,10 @@ body .section_carla div div div .row div div div .p_back:hover {
   text-decoration: none;
 }
 
+.section_footer .container .row .div_flex_footer .tag_hover:hover {
+  color: var(--color_oragn) !important;
+}
+
 .section_footer .container .row .div_flex_footer a:hover,
 .section_footer .container .row .div_start_flex a:hover {
   color: var(--color_oragn);
@@ -262,7 +266,6 @@ body .section_carla div div div .row div div div .p_back:hover {
 
 .section_footer .container .row div .icon {
   padding: 10px;
-  border-radius: 50%;
   transition: 1s;
   cursor: pointer;
 }
