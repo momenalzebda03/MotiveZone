@@ -5,12 +5,152 @@
   --color_black: black;
 }
 
+.tag_pointer {
+  cursor: pointer;
+}
+
+.icon {
+  background-color: rgb(249, 241, 227);
+  color: var(--color_oragn);
+  transition: 0.5s;
+}
+
+.icon:hover {
+  color: var(--color_white);
+  background-color: red;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color_oragn);
+}
+
 body {
   text-transform: capitalize;
   overflow-x: hidden;
 }
+/* end everyone */
+/* start overrite */
+body main section .container .row div .service_box h3,
+body main section .container .service_box_title h2 {
+  color: #072753;
+}
 
+body main section .container .service_box .service_link {
+  color: #1b498a;
+}
+
+body main section .container .service_box p,
+body main section .container .service_box_title p {
+  color: #28384e;
+}
+
+body main section .container div .project_box h3,
+body main section .container .project_box_title h2 {
+  color: var(--color_white);
+}
+
+body main section .container .project_box .project_link {
+  color: var(--color_oragn);
+}
+
+body main section .container .project_box p,
+body main section .container .project_box_title p {
+  color: var(--color_white);
+}
+/* end overrite */
 /* start header */
+body section .navbar .container .div_block .wrapper {
+  right: -100%;
+  background: #000;
+  transition: all 0.6s ease-in-out;
+}
+
+#active:checked ~ .wrapper {
+  right: 0;
+}
+
+body section .navbar .container .div_block .menu-btn {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+body section .navbar .container .div_block .menu-btn span,
+body section .navbar .container .div_block .menu-btn:before,
+body section .navbar .container .div_block .menu-btn:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: calc(48% - 1px);
+  width: 30px;
+  right: 5.2%;
+  border-bottom: 2px solid var(--color_white);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+body section .navbar .container .div_block .menu-btn:before {
+  transform: translateY(-8px);
+}
+body section .navbar .container .div_block .menu-btn:after {
+  transform: translateY(8px);
+}
+
+#active:checked + .menu-btn span {
+  transform: scaleX(0);
+}
+
+#active:checked + .menu-btn:before {
+  transform: rotate(45deg);
+  border-color: #fff;
+}
+
+#active:checked + .menu-btn:after {
+  transform: rotate(-45deg);
+  border-color: #fff;
+}
+
+.wrapper ul {
+  top: 60%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+.wrapper ul li {
+  height: 10%;
+}
+
+.wrapper ul li a:hover:after {
+  transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+  color: #1a73e8;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#active:checked ~ .wrapper ul li a {
+  opacity: 1;
+}
+
+.wrapper ul li a {
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100px);
+}
+
+#active:checked ~ .wrapper ul li a {
+  transform: none;
+  transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
+  transition-delay: 0.6s;
+  transform: translateX(-100px);
+}
+
 body .section_soper::before {
   content: "";
   position: absolute;
@@ -18,12 +158,12 @@ body .section_soper::before {
   width: 105%;
   height: 19vh;
   left: -3%;
-  top: 70%;
+  top: 90%;
   transform: rotate(-5deg);
 }
 
 body .section_soper {
-  height: 80vh;
+  height: 100vh;
   background: -webkit-linear-gradient(
     155deg,
     rgb(30, 77, 141),
@@ -33,18 +173,26 @@ body .section_soper {
 }
 
 body section nav .container .div_left .img_bottom,
-body section nav .container .div_flex2 img {
-  position: absolute;
+body section nav .container div img {
   top: -142px;
 }
 
-body .div_flex1 a {
+body div a {
+  cursor: pointer;
   color: var(--color_white);
   text-decoration: none;
 }
 
-body .div_flex1 a:hover,
-body .div_flex1:hover {
+body div .active_menu {
+  border-radius: 50px;
+  background-color: var(--color_white);
+}
+
+body div .active_menu,
+body section nav .container .collapse .css_navbar li a:hover,
+body section nav .container .collapse .css_navbar li .active,
+body div .active,
+body div a:hover {
   color: var(--color_oragn) !important;
 }
 
@@ -53,103 +201,79 @@ body section nav {
 }
 
 body section nav .container .collapse .css_navbar {
-  display: flex;
-  gap: 15px;
-}
-
-body section nav .container .collapse .css_navbar li .active {
-  color: var(--color_oragn);
+  gap: 30px;
 }
 
 body section nav .container .collapse .css_navbar li a {
   color: var(--color_white);
 }
 
-body section nav .container .collapse .css_navbar li a:hover {
-  color: var(--color_oragn);
-}
-
 .btn {
   background-color: var(--color_oragn);
-  color: var(--color_white);
   transition: 0.5s;
 }
 
 .btn:hover {
-  color: var(--color_white);
   background-color: var(--color_black);
 }
 
-body .section_soper div .row .my_center {
-  z-index: 1;
+.btn1 {
+  background-color: #1b498a;
+  transition: 0.5s;
 }
 
-body .section_soper div .row .my_center h1 .image_smoll1 {
+.btn1:hover {
+  background-color: var(--color_black);
+}
+
+body .section_soper div .row div h1 .image_smoll1 {
   position: absolute;
 }
 
-body .section_soper div .row .my_center h1 .image_smoll1 {
+body .section_soper div .row div h1 .image_smoll1 {
   width: 50px;
   margin-left: -65px;
 }
 
-body .section_soper div .row .div_image .div_flex3 div .image_smoll3 {
+body .section_soper div .row div div div .image_smoll3 {
   margin-top: -30px;
   width: 100px;
 }
 
-body .section_soper div .row .div_image .div_flex3 {
-  display: flex;
-}
-
-body .section_soper div .row .div_image .div_flex3 div .image_smoll5 {
-  margin-top: 200px;
-}
-
 /* end header */
-/* start our */
-body main .section_margin {
-  margin-top: 8%;
+/* start soper */
+body main .section_soper div .container .row div .image_back {
+  left: 5%;
 }
 
-body main .section_margin .container .row div a .p_hover:hover {
-  color: var(--color_black) !important;
-}
-
-body main .section_margin .div_our {
-  text-align: center;
-}
-
-body main .section_margin .row div .icon {
-  background-color: rgb(249, 241, 227);
-  color: var(--color_oragn);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-body main .section_margin .row div .icon:hover {
-  color: var(--color_white);
-  background-color: red;
-}
-
-/* end our */
+/* end soper */
 /* start help */
-body main .section_help .container .div_nth:nth-child(even) {
-  flex-direction: row;
+body main .section_help .container .div_nth div div .text_color {
+  color: #072753;
 }
 
-body main .section_help .container .div_nth:nth-child(odd) {
+body main .section_help .container .div_nth:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* end help */
-/* start interested */
-body main .section_footer .container .row div .my_form2 {
-  display: flex;
+body main .section_help .container .div_nth:nth-child(odd) {
+  flex-direction: row;
 }
 
+body main .section_help .container .div_nth div .div_index {
+  z-index: -1;
+}
+
+/* end help */
+/* start ourlatest */
+body main .background_overlay {
+  background-image: url("/folder_image/BG.svg");
+  background-size: cover;
+  background-position: center;
+}
+/* end ourlatest */
+/* start interested */
 body main .section_footer .container .row div .my_form2 .input_email1 {
-  text-transform: capitalize;
   width: 80%;
   height: 50px;
   border: 2px solid #ccc;
@@ -158,28 +282,6 @@ body main .section_footer .container .row div .my_form2 .input_email1 {
 }
 
 /* end interested */
-/* start ourlatest */
-body main .section_ourlatest .container #click_scroll {
-  cursor: col-resize;
-}
-
-body main .section_ourlatest {
-  background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
-  color: var(--color_white);
-}
-
-body main .section_ourlatest .container .row .div_show img {
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
-}
-
-body main .section_ourlatest .container div .div_show .flex_color {
-  color: var(--color_oragn);
-}
-
-/* end ourlatest */
 /* start carla */
 body main .section_carla .container .row div .image_wone {
   margin-top: -100px;
@@ -190,7 +292,6 @@ body main .section_carla .container .row div .point_loop {
   font-size: 30px;
   margin-left: -80px;
   margin-top: -45px;
-  color: var(--color_oragn);
 }
 
 body main .section_carla .container .row div .div_flex5 {
@@ -213,36 +314,21 @@ body main .section_carla div div div .row div div div .p_back:hover {
   color: var(--color_white);
 }
 
+body main .section_carla div .container div .row div div .flex_color {
+  color: var(--color_oragn) !important;
+}
+
 /* end carla */
 /* start footer */
 body main .section_footer {
-  background-color: #021121;
-  padding-bottom: 40px;
+  background-image: url("/folder_image/image_footer.svg");
+  background-size: cover;
+  background-position: center;
   color: var(--color_white);
 }
 
 body main .section_footer .container .row div .p_my_color {
   color: #9ba4ae;
-}
-
-body main .section_footer .container .row div .my_form2 .btn1 {
-  margin-top: -2px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  background-color: #1b498a;
-  color: var(--color_white);
-  transition: 0.5s;
-}
-
-body main .section_footer .container .row div .my_form2 .btn1:hover {
-  background-color: red;
-}
-
-body main .section_footer .container .row .div_flex_footer a {
-  text-decoration: none;
 }
 
 body main .section_footer .container .row .tag_hover:hover {
@@ -253,13 +339,24 @@ body main .section_footer .container .row .div_flex_footer a:hover {
   color: var(--color_oragn);
 }
 
-body main .section_footer .container .row div .icon {
-  padding: 10px;
-  transition: 1s;
-  cursor: pointer;
+body main .section_footer .container .row .col div .image_facebook {
+  background-color: #3a5897;
 }
 
-body main .section_footer .container .row div .icon:hover {
+body main .section_footer .container .row .col div .image_twitter {
+  background-color: #1da0f1;
+}
+
+body main .section_footer .container .row .col div .image_youtue {
+  background-color: #c4302b;
+}
+
+body main .section_footer .container .row div .icon_footer {
+  padding: 10px;
+  transition: 0.5s;
+}
+
+body main .section_footer .container .row div .icon_footer:hover {
   transform: rotate(360deg);
 }
 
@@ -267,33 +364,30 @@ body main .section_footer .container .row div p span {
   color: var(--color_oragn);
 }
 
+body main section .container .row div div .div_center {
+  width: 35px;
+  height: 35px;
+}
+
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
+  .div_block {
+    display: block !important;
+  }
+
   body .section_soper {
-    padding-top: 70%;
-    padding-bottom: 70%;
+    padding-top: 450px;
+    padding-bottom: 450px;
     height: 100vh;
   }
 
   body .section_soper::before,
-  section nav .container .div_left .img_bottom,
-  section nav .container .div_flex2 img,
-  .section_soper div .row .div_image .div_flex3 div .image_smoll4,
-  .section_soper div .row .div_image .div_flex3 div .image_smoll5 {
+  .div_none {
     display: none;
   }
 
-  section nav .container .collapse .css_navbar {
-    border-radius: 6px;
-    margin-top: 20px;
-    text-align: center;
-    width: 90%;
-    background-color: var(--color_black);
-  }
-
-  .section_soper div .container .row .my_center,
-  .section_margin,
+  .section_soper div .container .row div,
   .section_help,
   .section_ourlatest .container .row .div_show,
   .section_footer .container .row .div_flex_footer {
@@ -304,12 +398,7 @@ body main .section_footer .container .row div p span {
     width: 100%;
   }
 
-  .section_soper div .row .div_image .div_flex3 {
-    margin-top: 50px;
-    gap: 0px;
-  }
-
-  body .section_soper div .row .my_center .p_width {
+  .p_width {
     width: 100% !important;
   }
 

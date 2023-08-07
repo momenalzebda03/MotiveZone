@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/MotiveZone.css">
-    <link class="link" rel="icon" href="http://127.0.0.1:5500/folder_image/rotation%20(1).png" type="image/png">
+    <link class="link" rel="icon" href="http://127.0.0.1:5500/folder_image/rotation%20(1).svg" type="image/png">
     <link rel="stylesheet" href="bootstrap/css/owl.carousel.min.css">
     <link rel="stylesheet" href="bootstrap/css/owl.theme.default.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,233 +17,278 @@
 <body>
     <!-- start navbar -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100" id="navbar_scroll">
+        <nav class="navbar navbar-expand-lg navbar-light top-0 position-fixed w-100" id="navbar_scroll">
             <div class="container">
                 <div class="div_left">
-                    <img src="folder_image/Ellipse 1.png" class="img_bottom">
-                    <a href="#" class="div_flex1 text-decoration-none text-white d-flex position-relative ms-4 gap-3">
-                        <img src="folder_image/rotation (1).png" alt="">
+                    <img src="folder_image/Ellipse 1.svg" class="div_none img_bottom position-absolute">
+                    <a href="#" class="text-decoration-none text-white d-flex position-relative ms-4 gap-3">
+                        <img src="folder_image/rotation (1).svg" alt="">
                         <span class="fs-2">motivezone</span>
                     </a>
                 </div>
-                <div class="collapse navbar-collapse justify-content-center ms-4" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 css_navbar">
+                <div class="collapse navbar-collapse justify-content-center ms-4">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center rounded-3 d-flex css_navbar">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#scrollspyHeading" aria-current="page" href="#">Home</a>
+                            <a class="active" href="#scrollspyHeading">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading1" aria-current="page" href="#">our work</a>
+                            <a href="#scrollspyHeading1">our work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading2" aria-current="page" href="#">about us</a>
+                            <a href="#scrollspyHeading2">about us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading3" aria-current="page" href="#">review</a>
+                            <a href="#scrollspyHeading3">review</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading4" aria-current="page" href="#">contact us</a>
+                            <a href="#scrollspyHeading4">contact us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="div_flex2 ms-4">
-                    <a class="btn" href="#">say hi</a>
-                    <img src="folder_image/rotation (2).png" alt="">
+                <div class="div_none">
+                    <a class="btn text-white" href="#">say hi</a>
+                    <img src="folder_image/rotation (2).svg" alt="" class="div_none position-absolute">
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-none div_block">
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn text-center"><span></span></label>
+                    <div class="wrapper position-fixed top-0 w-100 h-100 d-flex justify-content-center text-center">
+                        <ul class="position-absolute start-50">
+                            <!-- <li class="nav-item">
+                                <a class="active" href="#scrollspyHeading">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scrollspyHeading1">our work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scrollspyHeading2">about us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scrollspyHeading3">review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scrollspyHeading4">contact us</a>
+                            </li> -->
+                            <div class="">
+                                <a class="px-5 py-2 btn text-white" href="#">say hi</a>
+                                <img src="folder_image/rotation (2).svg" alt="" class="div_none position-absolute">
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </section>
     <!-- end navbar -->
-    <!-- start soper -->
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
         tabindex="0">
+        <!-- start soper -->
         <section class="section_soper d-flex justify-content-center align-items-end">
             <div id="scrollspyHeading" class="d-flex align-items-center h-100">
                 <div class="container text-white">
                     <div class="row mt-5">
-                        <div class="col-lg-9 my_center mt-4">
-                            <h1>we build brands that lead & inspire</h1>
-                            <p class="w-75 p_width">on the other hand, we denounce with righteous indignation and
-                                dislike men who are so deguiled and demoralized by the charms of the moment, so blinded
-                                by desire, that they cannot foresee the pain and trouble</p>
-                            <a href="#" class="btn">read more</a>
+                        <div class="col-lg-9">
+                            <div class="div_none image_back position-absolute mt-5">
+                                <img src="folder_image/rotation (3).svg" alt="">
+                            </div>
+                            <div class="mt-4" data-aos="flip-left">
+                                <h1>we build brands that lead & inspire</h1>
+                                <p class="w-75 p_width">on the other hand, we denounce with righteous indignation and
+                                    dislike men who are so deguiled and demoralized by the charms of the moment, so
+                                    blinded by desire, that they cannot foresee the pain and trouble</p>
+                                <a href="#" class="text-white btn">read more</a>
+                            </div>
                         </div>
-                        <div class="col-lg-3 div_image">
-                            <div class="div_flex3 d-flex justify-content-center">
+                        <div class="col-lg-3">
+                            <div data-aos="flip-right" class="d-flex justify-content-center">
                                 <div>
-                                    <img src="folder_image/26081 [Converted].png" alt=""
-                                        class="my_image position-relative w-100">
+                                    <img src="folder_image/Group 80.svg" alt="" class="position-relative w-100">
                                     <img src="folder_image/rotation (2).png" alt="" class="image_smoll3">
-                                </div>
-                                <div>
-                                    <img src="folder_image/Rectangle 2.png" alt="" class="image_smoll4">
-                                    <img src="folder_image/Ellipse 15.png" alt="" class="image_smoll5">
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="div_none image_back position-absolute mt-5">
+                        <img src="folder_image/rotation (3).svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!-- end soper -->
         <!-- start our -->
-        <section class="section_margin mb-5 pb-5" id="scrollspyHeading1">
+        <section class="my-5 py-5 overflow-hidden" id="scrollspyHeading1">
             <div class="container">
-                <div class="div_our">
+                <div class="text-center service_box_title" data-aos="flip-left">
                     <h2>our services</h2>
-                    <p class="text-muted mt-3">that are bound to ensue; and equal blame belongs to those who fail in
-                        their
-                        duty through weakness of will,</p>
+                    <p class="mt-3">that are bound to ensue; and equal blame belongs to those who fail in
+                        their duty through weakness of will,</p>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 mt-5">
-                        <div class="icon d-inline p-4 rounded-circle">
-                            <img class="fas fa-water"></img>
+                    <div class="col-md-6 col-lg-4 text-md-start text-center">
+                        <div class="mt-5 service_box" data-aos="fade-right">
+                            <div class="icon d-inline p-4 rounded-circle">
+                                <img src="folder_image/ux-design.svg" alt="">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">web deisgn</h3>
+                            <p>shrinking from toil and pain, these cases are<br>perfectly
+                                simple and easy to distinguish, in a free</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none service_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
                         </div>
-                        <h3 class="fw-bold mt-5 fs-5">web deisgn</h3>
-                        <p class="text-muted">shrinking from toil and pain, these cases are<br>perfectly simple and easy
-                            to distinguish, in a free</p>
-                        <a href="#"
-                            class="p_hover d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none text-muted">
-                            <span>learn more</span>
-                            <span class="fas fa-arrow-right ms-2 mt-1"></span>
-                        </a>
                     </div>
-                    <div class="col-md-6 col-lg-4 mt-5">
-                        <div class="icon d-inline p-4 rounded-circle">
-                            <img class="fas fa-quidditch"></img>
+                    <div class="col-md-6 col-lg-4 text-md-start text-center">
+                        <div class="mt-5 service_box" data-aos="fade-down">
+                            <div class="icon d-inline p-4 rounded-circle">
+                                <img src="folder_image/vector.svg" alt="">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">ux/ui design</h3>
+                            <p>when nothing prevents our being able to do what<br>we like
+                                best, every pleasure is to be welcomed</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none service_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
                         </div>
-                        <h3 class="fw-bold mt-5 fs-5">ux/ui design</h3>
-                        <p class="text-muted">when nothing prevents our being able to do what<br>we like best, every
-                            pleasure is to be welcomed</p>
-                        <a href="#"
-                            class="p_hover d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none text-muted">
-                            <span>learn more</span>
-                            <span class="fas fa-arrow-right ms-2 mt-1"></span>
-                        </a>
                     </div>
-                    <div class="col-md-12 col-lg-4 mt-5">
-                        <div class="icon d-inline p-4 rounded-circle">
-                            <img class="fas fa-quidditch"></img>
+                    <div class="col-md-12 col-lg-4 text-md-start text-center">
+                        <div class="mt-5 service_box" data-aos="fade-left">
+                            <div class="icon d-inline p-4 rounded-circle">
+                                <img src="folder_image/graphic-design (1).svg" alt="">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">graphic deisgn</h3>
+                            <p class="">put in certain circumstances and owing to the<br>claims of
+                                duty or the obligations of business it will</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none service_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
                         </div>
-                        <h3 class="fw-bold mt-5 fs-5">graphic deisgn</h3>
-                        <p class="text-muted">put in certain circumstances and owing to the<br>claims of duty or
-                            the obligations of business it will</p>
-                        <a href="#"
-                            class="p_hover d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none text-muted">
-                            <span>learn more</span>
-                            <span class="fas fa-arrow-right ms-2 mt-1"></span>
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end our -->
         <!-- start help -->
-        <section class="section_help" id="scrollspyHeading2">
-            <div class="container py-3">
-                <div class="div_nth row py-5 justify-content-between">
+        <section class="section_help overflow-hidden" id="scrollspyHeading2">
+            <div class="container">
+                <div class="div_nth row justify-content-between text-center text-md-start">
                     <div class="col-md-5">
-                        <h4 class="fw-bold fs-1">we are here to help you with</h4>
-                        <p class="text-muted mt-3">put i must explain to you how all this mistaken idea of denouncing
-                            pleasure and praising pain was born and i will give you a complete account of the system,
-                            and expound the actual teachings of the great explorer</p>
-                        <p class="text-muted">of the truth, the master-bulider of human happiness, no one rejects,
-                            dislikes, avoids</p>
-                        <a href="#" class="btn">read more</a>
+                        <div data-aos="fade-left">
+                            <div class="position-absolute div_index">
+                                <img src="folder_image/BG1.png" alt="" class="p_width">
+                            </div>
+                            <h4 class="fw-bold fs-1 text_color">we are here to help you with</h4>
+                            <p class="text-muted mt-3">put i must explain to you how all this mistaken idea of
+                                denouncing pleasure and praising pain was born and i will give you a complete account of
+                                the system, and expound the actual teachings of the great explorer</p>
+                            <p class="text-muted">of the truth, the master-bulider of human happiness, no one rejects,
+                                dislikes, avoids</p>
+                            <a href="#" class="text-white btn">read more</a>
+                        </div>
                     </div>
-                    <div class="col-md-5 d-flex justify-content-center">
+                    <div class="col-md-5 d-flex justify-content-center" data-aos="fade-right">
                         <img src="folder_image/my_image.png" alt="" class="image_mysmoll w-100 h-75">
                     </div>
                 </div>
-                <div class="div_nth row py-5 justify-content-between">
+                <div class="div_nth row py-5 justify-content-between text-center text-md-start">
                     <div class="col-md-5">
-                        <h4 class="fw-bold fs-1">we are here to help you with</h4>
-                        <p class="text-muted mt-3">put i must explain to you how all this mistaken idea of denouncing
-                            pleasure and praising pain was born and i will give you a complete account of the system,
-                            and expound the actual teachings of the great explorer</p>
-                        <p class="text-muted">of the truth, the master-bulider of human happiness, no one rejects,
-                            dislikes, avoids</p>
-                        <a href="#" class="btn">read more</a>
+                        <div data-aos="fade-right">
+                            <h4 class="fw-bold fs-1 text_color">Interested To Work With Us?</h4>
+                            <p class="text-muted mt-3">Because it is pleasure, but because those who do not know how to
+                                pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                                is there anyone who loves or pursues or desires to obtain pain</p>
+                            <p class="text-muted">Of itself, because it is pain, but because occasionally circumstances
+                                occur in which toil and pain can procure him some great pleasure</p>
+                            <form class="input-group mt-5">
+                                <input class="form-control py-3" type="email" placeholder="Enter your email address">
+                                <button type="submit" class="input-group-text fw-bold px-5 text-white btn">send</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-md-5 d-flex justify-content-center">
-                        <img src="folder_image/my_image.png" alt="" class="image_mysmoll w-100 h-75">
+                    <div class="col-md-5 d-flex justify-content-center" data-aos="fade-left">
+                        <img src="folder_image/11331m.png" alt="" class="my-4 w-100 h-75">
                     </div>
                 </div>
             </div>
         </section>
         <!-- end help  -->
         <!-- start ourlatest -->
-        <section class="section_ourlatest w-100 py-5" id="scrollspyHeading3">
-            <div class="text-center">
-                <h5 class="fw-bold fs-1">our latest project</h5>
-                <p>to take a trivial example, which of us ever undertakes laborious physical exercise,
-                    execept to obtain some</p>
-            </div>
-            <div class="owl-carousel container my-5">
-                <div class="px-4 mt-2 div_show text-center text-md-start">
-                    <img src="folder_image/image_processing20200903-21646-11v87o6.png" alt="" class="rounded-4">
-                    <h6 class="fw-bold mt-4 fs-4">business & corporate</h6>
-                    <p class="w-75">find fault with a man who chooses to enjoy a pleasure</p>
-                    <a href="#"
-                        class="flex_color d-flex align-items-center justify-content-center justify-content-md-start text-decoration-none">
-                        <span>learn more</span>
-                        <span class="fas fa-arrow-right mt-1 ms-2"></span>
-                    </a>
+        <section class="my-5 py-5 background_overlay overflow-hidden" id="scrollspyHeading3">
+            <img src="folder_image/BG.svg" alt="" class="position-absolute w-100">
+            <div class="container">
+                <div class="text-center service_box_title project_box_title">
+                    <h2>Our Latest Project</h2>
+                    <p class="mt-3">To take a trivial example, which of us ever undertakes laborious physical exercise,
+                        except to obtain some advantage But who has any right</p>
                 </div>
-                <div class="px-4 mt-2 div_show text-center text-md-start">
-                    <img src="folder_image/Mask Group 2.png" alt="" class="rounded-4">
-                    <h6 class="fw-bold mt-4 fs-4">food & restaurant</h6>
-                    <p class="w-75">temporibus autem quibusdam et aut officiis debitis</p>
-                    <a href="#"
-                        class="flex_color d-flex align-items-center text-decoration-none justify-content-center justify-content-md-start">
-                        <span>learn more</span>
-                        <span class="fas fa-arrow-right mt-1 ms-2"></span>
-                    </a>
-                </div>
-                <div class="px-4 mt-2 div_show text-center text-md-start">
-                    <img src="folder_image/Mask Group 3.png" alt="" class="rounded-4">
-                    <h6 class="fw-bold mt-4 fs-4">travel & tourism</h6>
-                    <p class="w-75">itaque earum rerum hic tenetur a sapiente delectus, ut</p>
-                    <a href="#"
-                        class="flex_color d-flex align-items-center text-decoration-none justify-content-center justify-content-md-start">
-                        <span>learn more</span>
-                        <span class="fas fa-arrow-right mt-1 ms-2"></span>
-                    </a>
-                </div>
-                <div class="px-4 mt-2 div_show text-center text-md-start">
-                    <img src="folder_image/Mask Group 2.png" alt="" class="rounded-4">
-                    <h5 class="fw-bold mt-4">food & restaurant</h5>
-                    <p class="w-75">temporibus autem quibusdam et aut officiis debitis</p>
-                    <a href="#"
-                        class="flex_color d-flex align-items-center text-decoration-none justify-content-center justify-content-md-start">
-                        <span>learn more</span>
-                        <span class="fas fa-arrow-right mt-1 ms-2"></span>
-                    </a>
+                <div class="container">
+                    <div class="owl-carousel my-5">
+                        <div class="mt-5 service_box project_box text-md-start text-center">
+                            <div>
+                                <img src="folder_image/image_processing20200903-21646-11v87o6.svg" alt=""
+                                    class="rounded-4">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">Business & corporate</h3>
+                            <p>Find fault with a man who chooses to enjoy a pleasure that has no annoying.</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none service_link project_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
+                        </div>
+                        <div class="mt-5 service_box project_box text-md-start text-center">
+                            <div>
+                                <img src="folder_image/Mask Group 2.svg" alt="" class="rounded-4">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">Food & restaurant</h3>
+                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-md-start text-decoration-none service_link project_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
+                        </div>
+                        <div class="mt-5 service_box project_box text-md-start text-center">
+                            <div>
+                                <img src="folder_image/Mask Group 3.svg" alt="" class="rounded-4">
+                            </div>
+                            <h3 class="fw-bold mt-5 fs-5">Travel & tourism</h3>
+                            <p class="">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                                voluptatibus.</p>
+                            <a href="#"
+                                class="d-flex gap-1 align-items-center justify-content-center justify-content-lg-start text-decoration-none service_link project_link">
+                                <span>learn more</span>
+                                <span class="fas fa-arrow-right ms-2 mt-1"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- end ourlatest -->
         <!-- start carla -->
-        <section class="section_carla mt-5 pt-5" id="scrollspyHeading4">
+        <section class="overflow-hidden section_carla mt-5 pt-5" id="scrollspyHeading4">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="container carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-6 col-lg-6">
-                                <script>
-                                    for (let i = 0; i < 7; i++) {
-                                        document.write("<p class='point_loop'>................</p>");
-                                    }
-                                </script>
-                                <img src="folder_image/Image.png" alt="" class="image_wone">
-                            </div>
-                            <div class="col-md-6 col-lg-6 mt-5">
+                            <div class="col-md-6 col-lg-6" data-aos="fade-right">
                                 <div>
+                                    <script>
+                                        for (let i = 0; i < 7; i++) {
+                                            document.write("<p class='point_loop flex_color'>................</p>");
+                                        }
+                                    </script>
+                                    <img src="folder_image/Image.png" alt="" class="image_wone">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6" data-aos="fade-left">
+                                <div class="mt-5 text-black">
                                     <h6 class="fw-bold">carla stevens</h6>
                                     <h6 class="text-muted">technical director at motivezone</h6>
                                     <p class="text-muted">"on the other hand, we denounce with righteous indignation and
@@ -264,16 +309,18 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6 col-lg-6">
-                                <script>
-                                    for (let i = 0; i < 7; i++) {
-                                        document.write("<p class='point_loop'>................</p>");
-                                    }
-                                </script>
-                                <img src="folder_image/Image.png" alt="" class="image_wone">
-                            </div>
-                            <div class="col-md-6 col-lg-6 mt-5">
                                 <div>
-                                    <h6 class="fw-bold">carla stevens</h6>
+                                    <script>
+                                        for (let i = 0; i < 7; i++) {
+                                            document.write("<p class='point_loop flex_color'>................</p>");
+                                        }
+                                    </script>
+                                    <img src="folder_image/Image.png" alt="" class="image_wone">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="mt-5">
+                                    <h6 class="fw-bold text-black">carla stevens</h6>
                                     <h6 class="text-muted">technical director at motivezone</h6>
                                     <p class="text-muted">"on the other hand, we denounce with righteous indignation and
                                         dislike men who are so beguiled and demoralized by the charms of pleasure of the
@@ -295,120 +342,150 @@
         </section>
         <!-- end carla -->
         <!-- start main news -->
-        <section class="mt-5 py-5">
-            <div class="container owl-carousel">
-                <div class="w-50">
-                    <img src="folder_image/Group 35.png" alt="">
-                </div>
-                <div class="w-50">
-                    <img src="folder_image/Group 40.png" alt="">
-                </div>
-                <div class="w-50">
-                    <img src="folder_image/Group 46.png" alt="">
-                </div>
-                <div class="w-50">
-                    <img src="folder_image/Group 49.png" alt="">
+        <section class="overflow-hidden mt-5 py-5">
+            <div class="container">
+                <div class="owl-carousel d-flex" id="owl-carousel">
+                    <div class="w-75 p_width" data-aos="fade-right">
+                        <img src="folder_image/Group 35.png" alt="">
+                    </div>
+                    <div class="w-75 p_width" data-aos="fade-down">
+                        <img src="folder_image/Group 40.png" alt="">
+                    </div>
+                    <div class="w-75 p_width" data-aos="fade-left">
+                        <img src="folder_image/Group 46.png" alt="">
+                    </div>
+                    <div class="w-75 p_width">
+                        <img src="folder_image/Group 49.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
         <!-- end main news -->
         <!-- start footer -->
-        <section class="section_footer mt-5">
+        <section class="overflow-hidden section_footer pb-2 mt-5 w-100 h-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 mt-5">
-                        <a href="#"
-                            class="div_flex1 text-white d-flex justify-content-md-start justify-content-center text-decoration-none align-items-center gap-3">
-                            <img src="folder_image/rotation (1).png" alt="">
-                            <span class="fw-bold">uixzone</span>
-                        </a>
-                        <div class="text-md-start text-center mt-3">
-                            <p class="p_my_color">on the other hand, we denounce with righteous
-                                indignation and dislike men.
-                            </p>
-                            <p class="fw-bold">interested to work with us</p>
-                            <form action="" method="" class="my_form2">
-                                <input class="input_email1" type="email" placeholder="enter your email address">
-                                <input type="submit" class="btn1" value="Send">
-                            </form>
+                    <div class="col">
+                        <div class="mt-5" data-aos="fade-right">
+                            <a href="#"
+                                class="text-white d-flex justify-content-md-start justify-content-center text-decoration-none align-items-center gap-3">
+                                <img src="folder_image/rotation (1).svg" alt="">
+                                <span class="fw-bold">uixzone</span>
+                            </a>
+                            <div class="text-md-start text-center mt-3">
+                                <p class="p_my_color">on the other hand, we denounce with righteous
+                                    indignation and dislike men.
+                                </p>
+                                <p class="fw-bold">interested to work with us</p>
+                                <form class="input-group">
+                                    <input class="form-control py-2" type="email"
+                                        placeholder="Enter your email address">
+                                    <button type="submit"
+                                        class="border border-0 input-group-text fw-bold text-white btn1">send</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mt-5 div_flex_footer d-flex flex-column gap-2">
-                        <h5 class="fw-bold">company</h5>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">about us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">protfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">fAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">reviews</a>
-                            </li>
-                        </ul>
+                    <div class="col" data-aos="fade-down">
+                        <div class="mt-5 div_flex_footer d-flex flex-column gap-2">
+                            <h5 class="fw-bold">company</h5>
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">about us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">protfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">fAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">reviews</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mt-5 div_flex_footer d-flex flex-column gap-2">
-                        <h5 class="fw-bold">support</h5>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">about us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">privacy policy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">tram of use</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">buy & sell</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">reviews</a>
-                            </li>
-                        </ul>
+                    <div class="col" data-aos="fade-up">
+                        <div class="mt-5 div_flex_footer d-flex flex-column gap-2">
+                            <h5 class="fw-bold">support</h5>
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">about us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">privacy policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">tram of use</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">buy & sell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">reviews</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 mt-5 div_flex_footer d-flex flex-column gap-2">
-                        <h5 class="fw-bold">contact</h5>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">madni ave, use 1212</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">+8802-55662000</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">email: www.uixzone12.com</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">buy & sell</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="text-muted tag_hover">reviews</a>
-                            </li>
-                        </ul>
+                    <div class="col" data-aos="fade-left">
+                        <div class="mt-5 div_flex_footer d-flex flex-column gap-2">
+                            <h5 class="fw-bold">contact</h5>
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">madni ave, use
+                                        1212</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">+8802-55662000</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">email:
+                                        www.uixzone12.com</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">buy & sell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="text-muted tag_hover text-decoration-none">reviews</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 d-flex gap-3">
-                        <a href="#" class="text-muted tag_hover text-decoration-none">terms of service</a>
-                        <a href="#" class="text-muted tag_hover text-decoration-none">privacy policy</a>
-                        <a href="#" class="text-muted tag_hover text-decoration-none">security</a>
+                    <div class="col">
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-muted tag_hover text-decoration-none">terms of service</a>
+                            <a href="#" class="text-muted tag_hover text-decoration-none">privacy policy</a>
+                            <a href="#" class="text-muted tag_hover text-decoration-none">security</a>
+                        </div>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-4 mt-4 mt-md-0 text-center">
-                        <i class="fab fa-facebook-f icon" style="background-color: #3A5897;"></i>
-                        <i class="fab fa-twitter icon ms-3" style="background-color: #1DA0F1;"></i>
-                        <i class="fab fa-youtube icon ms-3" style="background-color: #C4302B;"></i>
+                    <div class="col">
+                        <div class="d-flex gap-3 justify-content-center align-items-center mt-4 mt-md-0 text-center">
+                            <div
+                                class="div_center rounded-circle d-flex justify-content-center align-items-center image_facebook">
+                                <img src="folder_image/Group 64.svg" class="icon_footer tag_pointer">
+                            </div>
+                            <div
+                                class="div_center rounded-circle image_twitter d-flex justify-content-center align-items-center">
+                                <img src="folder_image/Group 70.svg" class="icon_footer tag_pointer">
+                            </div>
+                            <div
+                                class="div_center image_youtue rounded-circle d-flex justify-content-center align-items-center">
+                                <img src="folder_image/Group 76.svg" class="icon_footer tag_pointer">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12 col-lg-4 mt-5 mt-lg-0 text-center text-lg-end">
-                        <p class="text-muted fw-bold">&copy; 2023 <span>motivezone</span> all rights reserved.</p>
+                    <div class="col">
+                        <div class="mt-5 mt-lg-0 text-center text-lg-end">
+                            <p class="text-muted fw-bold">&copy; 2023 <span>motivezone</span> all rights reserved.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -423,5 +500,46 @@
 <script src="bootstrap/js/owl.carousel.js"></script>
 <script src="bootstrap/js/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    $("#owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            300: {
+                items: 2,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 4,
+            },
+        },
+    });
+
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+        },
+    });
+
+    AOS.init();
+</script>
 
 </html>

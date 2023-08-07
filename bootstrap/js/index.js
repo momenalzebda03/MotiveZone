@@ -1,5 +1,4 @@
 let navbar_scroll = document.getElementById("navbar_scroll");
-
 window.onscroll = function () {
   this.scrollY >= 100
     ? (navbar_scroll.style.background =
@@ -18,8 +17,13 @@ for (let i = 0; i < tag_header.length; i++) {
   });
 }
 
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
-});
-
-AOS.init();
+var tag_header = document.querySelectorAll(".link_active");
+for (let i = 0; i < tag_header.length; i++) {
+  var chekd = tag_header[i];
+  chekd.addEventListener("click", function () {
+    for (let i = 0; i < tag_header.length; i++) {
+      tag_header[i].classList.remove("active_menu");
+    }
+    this.classList.add("active_menu");
+  });
+}
