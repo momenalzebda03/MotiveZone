@@ -63,94 +63,6 @@ body main section .container .project_box_title p {
 }
 /* end overrite */
 /* start header */
-body section .navbar .container .div_block .wrapper {
-  right: -100%;
-  background: #000;
-  transition: all 0.6s ease-in-out;
-}
-
-#active:checked ~ .wrapper {
-  right: 0;
-}
-
-body section .navbar .container .div_block .menu-btn {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-body section .navbar .container .div_block .menu-btn span,
-body section .navbar .container .div_block .menu-btn:before,
-body section .navbar .container .div_block .menu-btn:after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  top: calc(48% - 1px);
-  width: 30px;
-  right: 5.2%;
-  border-bottom: 2px solid var(--color_white);
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-body section .navbar .container .div_block .menu-btn:before {
-  transform: translateY(-8px);
-}
-body section .navbar .container .div_block .menu-btn:after {
-  transform: translateY(8px);
-}
-
-#active:checked + .menu-btn span {
-  transform: scaleX(0);
-}
-
-#active:checked + .menu-btn:before {
-  transform: rotate(45deg);
-  border-color: #fff;
-}
-
-#active:checked + .menu-btn:after {
-  transform: rotate(-45deg);
-  border-color: #fff;
-}
-
-.wrapper ul {
-  top: 60%;
-  height: 90%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-}
-
-.wrapper ul li {
-  height: 10%;
-}
-
-.wrapper ul li a:hover:after {
-  transform: scaleY(1);
-}
-
-.wrapper ul li a:hover {
-  color: #1a73e8;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-#active:checked ~ .wrapper ul li a {
-  opacity: 1;
-}
-
-.wrapper ul li a {
-  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateX(100px);
-}
-
-#active:checked ~ .wrapper ul li a {
-  transform: none;
-  transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
-  transition-delay: 0.6s;
-  transform: translateX(-100px);
-}
-
 body .section_soper::before {
   content: "";
   position: absolute;
@@ -188,7 +100,6 @@ body div .active_menu {
   background-color: var(--color_white);
 }
 
-body div .active_menu,
 body section nav .container .collapse .css_navbar li a:hover,
 body section nav .container .collapse .css_navbar li .active,
 body div .active,
@@ -238,6 +149,12 @@ body .section_soper div .row div h1 .image_smoll1 {
 body .section_soper div .row div div div .image_smoll3 {
   margin-top: -30px;
   width: 100px;
+}
+
+body section .navbar .container button div .div_menu {
+  transition: 0.5s;
+  width: 10px;
+  height: 2px;
 }
 
 /* end header */
@@ -372,8 +289,20 @@ body main section .container .row div div .div_center {
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
-  .div_block {
-    display: block !important;
+  .div_backgroundcolor {
+    position: absolute;
+    height: 100vh;
+    font-size: 30px;
+    font-weight: bold;
+    left: -24px;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+  }
+
+  body section nav .container .collapse .css_navbar {
+    padding-top: 30px;
+    gap: 100px;
   }
 
   body .section_soper {

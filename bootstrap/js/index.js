@@ -27,3 +27,25 @@ for (let i = 0; i < tag_header.length; i++) {
     this.classList.add("active_menu");
   });
 }
+
+var bollen = true;
+var div_backgroundcolor = document.getElementById("div_backgroundcolor");
+var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+var div_menu1 = document.getElementById("div_menu1");
+var div_menu2 = document.getElementById("div_menu2");
+var div_menu3 = document.getElementById("div_menu3");
+div_backgroundcolor.onclick = () => {
+  if (bollen === true) {
+    div_menu1.style.transform = "translateY(3px) rotate(45deg)";
+    div_menu2.style.display = "none";
+    div_menu3.style.transform = "translateY(-3px) rotate(-45deg)";
+    navbarSupportedContent.style.width = "100%";
+    bollen = false;
+  } else {
+    div_menu1.style.transform = "rotate(0deg)";
+    div_menu2.style.display = "block";
+    div_menu3.style.transform = "rotate(0deg)";
+    navbarSupportedContent.style.width = "0";
+    bollen = true;
+  }
+};
