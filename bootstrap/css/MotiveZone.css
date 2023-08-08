@@ -5,10 +5,16 @@
   --color_black: black;
 }
 
-.project_link {
-  color: var(--color_oragn);
+.my_index {
+  z-index: 2;
 }
 
+.project_link {
+  color: var(--color_oragn) !important;
+}
+
+body .section_soper div .container::after,
+body main .section_soper::after,
 body main .background_overlay,
 body main .section_footer {
   background-size: cover;
@@ -66,14 +72,34 @@ body main section .container .project_box_title p {
 }
 /* end overrite */
 /* start header */
-body .section_soper::before {
+body main .section_soper::after {
+  content: "";
+  position: absolute;
+  background-image: url("/folder_image/rotation\ \(3\).svg");
+  width: 90px;
+  height: 90px;
+  top: 35%;
+  left: 5%;
+}
+
+body .section_soper div .container::after {
+  content: "";
+  position: absolute;
+  background-image: url("/folder_image/rotation\ \(3\).svg");
+  width: 94px;
+  height: 94px;
+  top: 70%;
+  left: 5%;
+}
+
+body main .section_soper::before {
   content: "";
   position: absolute;
   background: white;
   width: 105%;
   height: 19vh;
   left: -3%;
-  top: 90%;
+  top: 91%;
   transform: rotate(-5deg);
 }
 
@@ -97,10 +123,6 @@ body section nav .container .collapse .css_navbar li .active {
   color: var(--color_oragn) !important;
 }
 
-body section nav {
-  z-index: 2;
-}
-
 .btn {
   background-color: var(--color_oragn);
   transition: 0.5s;
@@ -117,12 +139,6 @@ body section .navbar .container button div .div_menu {
 }
 
 /* end header */
-/* start soper */
-body main .section_soper div .container .row div .image_back {
-  left: 5%;
-}
-
-/* end soper */
 /* start our */
 body main section .container .row div .service_box .icon {
   background-color: rgb(249, 241, 227);
@@ -197,15 +213,15 @@ body main .section_footer .container .row .div_flex_footer a:hover {
   color: var(--color_oragn);
 }
 
-body main .section_footer .container .row .col div .image_facebook {
+body main .section_footer .container .row div div .image_facebook {
   background-color: #3a5897;
 }
 
-body main .section_footer .container .row .col div .image_twitter {
+body main .section_footer .container .row div div .image_twitter {
   background-color: #1da0f1;
 }
 
-body main .section_footer .container .row .col div .image_youtue {
+body main .section_footer .container .row div div .image_youtue {
   background-color: #c4302b;
 }
 
@@ -223,12 +239,12 @@ body main section .container .row div div .div_center {
   height: 35px;
 }
 
-body main .section_footer .container .row .col div div form .btn1 {
+body main .section_footer .container .row div div div form .btn1 {
   background-color: #1b498a;
   transition: 0.5s;
 }
 
-body main .section_footer .container .row .col div div form .btn1:hover {
+body main .section_footer .container .row div div div form .btn1:hover {
   background-color: var(--color_black);
 }
 
@@ -258,6 +274,9 @@ body main .section_footer .container .row .col div div form .btn1:hover {
     height: 100vh;
   }
 
+  body main .section_soper::before,
+  body .section_soper div .container::after,
+  body main .section_soper::after,
   body .section_soper::before,
   .div_none {
     display: none;
