@@ -5,19 +5,22 @@
   --color_black: black;
 }
 
+.project_link {
+  color: var(--color_oragn);
+}
+
+body main .background_overlay,
+body main .section_footer {
+  background-size: cover;
+  background-position: center;
+}
+
+.image_mysmoll {
+  object-fit: cover;
+}
+
 .tag_pointer {
   cursor: pointer;
-}
-
-.icon {
-  background-color: rgb(249, 241, 227);
-  color: var(--color_oragn);
-  transition: 0.5s;
-}
-
-.icon:hover {
-  color: var(--color_white);
-  background-color: red;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +56,7 @@ body main section .container .project_box_title h2 {
   color: var(--color_white);
 }
 
-body main section .container .project_box .project_link {
+.project_link {
   color: var(--color_oragn);
 }
 
@@ -89,34 +92,13 @@ body section nav .container div img {
   top: -142px;
 }
 
-body div a {
-  cursor: pointer;
-  color: var(--color_white);
-  text-decoration: none;
-}
-
-body div .active_menu {
-  border-radius: 50px;
-  background-color: var(--color_white);
-}
-
 body section nav .container .collapse .css_navbar li a:hover,
-body section nav .container .collapse .css_navbar li .active,
-body div .active,
-body div a:hover {
+body section nav .container .collapse .css_navbar li .active {
   color: var(--color_oragn) !important;
 }
 
 body section nav {
   z-index: 2;
-}
-
-body section nav .container .collapse .css_navbar {
-  gap: 30px;
-}
-
-body section nav .container .collapse .css_navbar li a {
-  color: var(--color_white);
 }
 
 .btn {
@@ -126,29 +108,6 @@ body section nav .container .collapse .css_navbar li a {
 
 .btn:hover {
   background-color: var(--color_black);
-}
-
-.btn1 {
-  background-color: #1b498a;
-  transition: 0.5s;
-}
-
-.btn1:hover {
-  background-color: var(--color_black);
-}
-
-body .section_soper div .row div h1 .image_smoll1 {
-  position: absolute;
-}
-
-body .section_soper div .row div h1 .image_smoll1 {
-  width: 50px;
-  margin-left: -65px;
-}
-
-body .section_soper div .row div div div .image_smoll3 {
-  margin-top: -30px;
-  width: 100px;
 }
 
 body section .navbar .container button div .div_menu {
@@ -164,6 +123,18 @@ body main .section_soper div .container .row div .image_back {
 }
 
 /* end soper */
+/* start our */
+body main section .container .row div .service_box .icon {
+  background-color: rgb(249, 241, 227);
+  color: var(--color_oragn);
+  transition: 0.5s;
+}
+
+body main section .container .row div .service_box .icon:hover {
+  color: var(--color_white);
+  background-color: red;
+}
+/* end our */
 /* start help */
 body main .section_help .container .div_nth div div .text_color {
   color: #072753;
@@ -185,63 +156,33 @@ body main .section_help .container .div_nth div .div_index {
 /* start ourlatest */
 body main .background_overlay {
   background-image: url("/folder_image/BG.svg");
-  background-size: cover;
-  background-position: center;
 }
 /* end ourlatest */
-/* start interested */
-body main .section_footer .container .row div .my_form2 .input_email1 {
-  width: 80%;
-  height: 50px;
-  border: 2px solid #ccc;
-  background-color: #eaeaea;
-  padding-left: 10px;
-}
-
-/* end interested */
 /* start carla */
-body main .section_carla .container .row div .image_wone {
+body main section .container .row div .image_wone {
   margin-top: -100px;
 }
 
-body main .section_carla .container .row div .point_loop {
-  font-weight: bold;
-  font-size: 30px;
+body main section .container .row div .point_loop {
+  color: var(--color_oragn) !important;
   margin-left: -80px;
   margin-top: -45px;
 }
 
-body main .section_carla .container .row div .div_flex5 {
-  display: flex;
-  gap: 40px;
-}
-
-.container .row div .carousel span:hover {
-  background-color: var(--color_oragn);
-  color: var(--color_white);
-}
-
-body main .section_carla div div div .row div div div .p_back {
+body main section div div div .row div div div .div_border {
   border: 2px solid var(--color_oragn);
+  width: 45px;
+  height: 45px;
 }
 
-body main .section_carla div div div .row div div div .p_back:hover {
-  cursor: pointer;
-  background-color: var(--color_blue);
-  color: var(--color_white);
-}
-
-body main .section_carla div .container div .row div div .flex_color {
-  color: var(--color_oragn) !important;
+body main section div div div .row div div div .div_border:hover {
+  background-color: var(--color_black);
 }
 
 /* end carla */
 /* start footer */
 body main .section_footer {
   background-image: url("/folder_image/image_footer.svg");
-  background-size: cover;
-  background-position: center;
-  color: var(--color_white);
 }
 
 body main .section_footer .container .row div .p_my_color {
@@ -277,32 +218,38 @@ body main .section_footer .container .row div .icon_footer:hover {
   transform: rotate(360deg);
 }
 
-body main .section_footer .container .row div p span {
-  color: var(--color_oragn);
-}
-
 body main section .container .row div div .div_center {
   width: 35px;
   height: 35px;
 }
 
+body main .section_footer .container .row .col div div form .btn1 {
+  background-color: #1b498a;
+  transition: 0.5s;
+}
+
+body main .section_footer .container .row .col div div form .btn1:hover {
+  background-color: var(--color_black);
+}
+
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
-  .div_backgroundcolor {
+  body section .navbar .container .div_backgroundcolor {
     position: absolute;
+    width: 100%;
     height: 100vh;
     font-size: 30px;
     font-weight: bold;
-    left: -24px;
+    transition: 0.5s;
     top: 0;
+    right: -900px;
     z-index: -1;
     background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
   }
 
   body section nav .container .collapse .css_navbar {
-    padding-top: 30px;
-    gap: 100px;
+    gap: 100px !important;
   }
 
   body .section_soper {
@@ -329,14 +276,6 @@ body main section .container .row div div .div_center {
 
   .p_width {
     width: 100% !important;
-  }
-
-  .section_carla {
-    text-align: center;
-  }
-
-  .section_carla .container .row div .image_wone {
-    width: 100%;
   }
 }
 
