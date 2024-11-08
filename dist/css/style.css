@@ -1,0 +1,294 @@
+::-webkit-scrollbar-thumb {
+  background: var(--color_oragn);
+}
+
+body {
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+:root {
+  --color_blue: blue;
+  --color_white: white;
+  --color_oragn: #ff9c00;
+  --color_black: black;
+}
+
+.myIndex {
+  z-index: 3;
+}
+
+.projectLink {
+  color: var(--color_oragn) !important;
+}
+
+body .sectionSoper div .container::after,
+body main .sectionSoper::after,
+body main .backgroundOverlay,
+body main .sectionFooter {
+  background-size: cover;
+  background-position: center;
+}
+
+.imageMySmoll {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tagPointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* end everyone */
+/* start overrite */
+body main section .container .row div .serviceBox h3,
+body main section .container .serviceBoxTitle h2 {
+  color: #072753;
+}
+
+body main section .container .serviceBox .serviceLink {
+  color: #1b498a;
+}
+
+body main section .container .serviceBox p,
+body main section .container .serviceBoxTitle p {
+  color: #28384e;
+}
+
+body main section .container div .projectBox h3,
+body main section .container .projectBoxTitle h2 {
+  color: var(--color_white);
+}
+
+.projectLink {
+  color: var(--color_oragn);
+}
+
+body main section .container .projectBox p,
+body main section .container .projectBoxTitle p {
+  color: var(--color_white);
+}
+
+/* end overrite */
+/* start header */
+body main .sectionSoper::after {
+  content: "";
+  position: absolute;
+  background-image: url("/assest/images/rotation3.svg");
+  width: 90px;
+  height: 90px;
+  top: 35%;
+  left: 5%;
+}
+
+body .sectionSoper div .container::after {
+  content: "";
+  position: absolute;
+  background-image: url("/assest/images/rotation3.svg");
+  width: 94px;
+  height: 94px;
+  top: 70%;
+  left: 5%;
+}
+
+body main .sectionSoper::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 105%;
+  height: 19vh;
+  left: -3%;
+  top: 91%;
+  transform: rotate(-5deg);
+}
+
+body .sectionSoper {
+  height: 100vh;
+  background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+}
+
+body section nav .container .divLeft .imgBottom,
+body section nav .container div img {
+  top: -142px;
+}
+
+body section nav .container .collapse .cssNavbar li a:hover,
+body section nav .container .collapse .cssNavbar li .active {
+  color: var(--color_oragn) !important;
+}
+
+.btn {
+  background-color: var(--color_oragn);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--color_black);
+}
+
+body section .navbar .container button div .divMenu {
+  transition: 0.5s;
+  width: 10px;
+  height: 2px;
+}
+
+/* end header */
+/* start our */
+body main section .container .row div .serviceBox .icon {
+  background-color: rgb(249, 241, 227);
+  color: var(--color_oragn);
+  transition: 0.5s;
+}
+
+body main section .container .row div .serviceBox .icon:hover {
+  color: var(--color_white);
+  background-color: red;
+}
+
+/* end our */
+/* start help */
+body main .sectionHelp .container .divNth div div .textColor {
+  color: #072753;
+}
+
+body main .sectionHelp .container .divNth:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+body main .sectionHelp .container .divNth:nth-child(odd) {
+  flex-direction: row;
+}
+
+body main .sectionHelp .container .divNth div .div_index {
+  z-index: -1;
+}
+
+/* end help */
+/* start ourlatest */
+body main .backgroundOverlay {
+  background-image: url("/assest/images/BG.svg");
+}
+
+/* end ourlatest */
+/* start carla */
+body main section .container .row div .imageWone {
+  margin-top: -100px;
+}
+
+body main section .container .row div .pointLoop {
+  color: var(--color_oragn) !important;
+  margin-left: -80px;
+  margin-top: -45px;
+}
+
+body main section div div div .row div div div .divBorder {
+  border: 2px solid var(--color_oragn);
+  width: 45px;
+  height: 45px;
+}
+
+body main section div div div .row div div div .divBorder:hover {
+  background-color: var(--color_black);
+}
+
+/* end carla */
+/* start footer */
+body main .sectionFooter {
+  background-image: url("/assest/images/imageFooter.svg");
+}
+
+body main .sectionFooter .container .row div .pMyColor {
+  color: #9ba4ae;
+}
+
+body main .sectionFooter .container .row .tagHover:hover {
+  color: var(--color_oragn) !important;
+}
+
+body main .sectionFooter .container .row .divFlexfooter a:hover {
+  color: var(--color_oragn);
+}
+
+body main .sectionFooter .container .row div div .imageFacebook {
+  background-color: #3a5897;
+}
+
+body main .sectionFooter .container .row div div .imageTwitter {
+  background-color: #1da0f1;
+}
+
+body main .sectionFooter .container .row div div .imageYoutue {
+  background-color: #c4302b;
+}
+
+body main .sectionFooter .container .row div .iconFooter {
+  padding: 10px;
+  transition: 0.5s;
+}
+
+body main .sectionFooter .container .row div .iconFooter:hover {
+  transform: rotate(360deg);
+}
+
+body main section .container .row div div .divCenter {
+  width: 35px;
+  height: 35px;
+}
+
+body main .sectionFooter .container .row div div div form .btn1 {
+  background-color: #1b498a;
+  transition: 0.5s;
+}
+
+body main .sectionFooter .container .row div div div form .btn1:hover {
+  background-color: var(--color_black);
+}
+
+/* end footer */
+/* start media */
+@media (max-width: 991px) and (min-width: 0px) {
+  body section .navbar .container .divBackgroundColor {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+    top: 0;
+    right: -900px;
+    z-index: -1;
+    background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
+  }
+  body section nav .container .collapse .cssNavbar {
+    gap: 100px !important;
+  }
+  body .sectionSoper {
+    padding-top: 450px;
+    padding-bottom: 450px;
+    height: 100vh;
+  }
+  body main .sectionSoper::before,
+  body .sectionSoper div .container::after,
+  body main .sectionSoper::after,
+  body .sectionSoper::before,
+  .divNone {
+    display: none;
+  }
+  .sectionSoper div .container .row div,
+  .sectionHelp,
+  .section_ourlatest .container .row .divShow,
+  .sectionFooter .container .row .divFlexfooter {
+    text-align: center;
+  }
+  .sectionHelp .container .row .divRight img {
+    width: 100%;
+  }
+  .pWidth {
+    width: 100% !important;
+  }
+}
+/* end media *//*# sourceMappingURL=style.css.map */
