@@ -114,7 +114,7 @@ body .sectionSoper {
     background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
 }
 
-body section nav .container .divLeft .imgBottom,
+body nav div div div .divLeft .imgBottom,
 body section nav .container div img {
     top: -142px;
 }
@@ -139,6 +139,10 @@ body section .navbar .container button div .divMenu {
     height: 2px;
 }
 
+body nav div .imageRotationBottom {
+    bottom: 25px;
+    right: -80px;
+}
 /* end header */
 /* start our */
 body main section .container .row div .serviceBox .icon {

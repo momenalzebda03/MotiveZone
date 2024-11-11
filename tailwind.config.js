@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./public/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "orange-custom": "#ff9c00", // Custom color
+      },
+    },
   },
   plugins: [],
 };
