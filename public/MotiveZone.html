@@ -16,91 +16,84 @@
 
 <body>
     <!-- start navbar -->
-    <nav class="fixed w-full z-10 top-0 py-2" id="navbarScroll">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav class="fixed w-full z-20 top-0 py-2" id="navbarScroll">
+        <div class="container mx-auto px-4">
             <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <button type="button"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                <div class="absolute flex sm:hidden">
+                    <button type="button" class="relative rounded-md p-2 text-white hover:bg-gray-700 hover:text-white"
+                        id="mobile-menu-button">
+                        <svg class="block h-6 w-6" stroke="currentColor" aria-hidden="false">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
                 </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="mb-4 divLeft">
-                        <img src="/assest/images/Ellipse1.svg" class="block md-none imgBottom absolute">
+                <div class="flex flex-1 items-center justify-center sm:justify-start">
+                    <div class="mb-2 flex justify-end md:block w-full md:w-52">
+                        <img src="/assest/images/Ellipse1.svg" class="hidden md:block absolute top-[-142px]">
                         <a href="#" class="text-decoration-none text-white flex relative ms-3 gap-3 items-center">
                             <img src="/assest/images/rotation1.svg" alt="">
                             <span class="text-2xl">motivezone</span>
                         </a>
                     </div>
-                    <div class="mt-2 flex justify-center w-full" id="mobile-menu">
-                        <ul class="flex space-x-4">
-                            <!-- click mouse and bold navbar-->
+                    <div class="hidden sm:block w-full">
+                        <ul class="flex justify-center space-x-4">
                             <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500"
-                                aria-current="page">
-                                home</li>
-                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">
-                                our work</li>
-                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">
-                                about us</li>
-                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">
-                                review</li>
-                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">
-                                contact us</li>
+                                aria-current="page">home</li>
+                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">our work</li>
+                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">about us</li>
+                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">review</li>
+                            <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">contact us
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <a class="btn px-5 py-2 rounded-lg text-white" href="#">say hi</a>
+                <div class="hidden md:block">
+                    <a href="#" class="btn bg-orange-500 hover:bg-black px-5 py-2 rounded-lg text-white">say hi</a>
                 </div>
             </div>
-            <div class="block md-none absolute imageRotationBottom">
+            <div class="hidden md:block absolute imageRotationBottom bottom-6 right-[-80px]">
                 <img src="/assest/images/rotation2.svg" alt="">
             </div>
+        </div>
+        <div class="px-4 hidden" id="mobile-menu" class="hidden">
+            <ul class="space-y-1 px-2 pb-3">
+                <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500" aria-current="page">home
+                </li>
+                <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">our work</li>
+                <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">about us</li>
+                <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">review</li>
+                <li class="rounded-md px-3 py-2 font-medium text-white hover:text-orange-500">contact us
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- end navbar -->
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
         tabindex="0">
         <!-- start soper -->
-        <main class="sectionSoper flex justify-center items-end">
-            <div id="scrollspyHeading" class="flex items-center h-full">
-                <!-- <div class="container text-white">
-                    <div class="row mt-5">
-                        <div class="col-lg-9 z-30">
-                            <div class="mt-4" data-aos="flip-left">
-                                <h1>we build brands that lead & inspire</h1>
-                                w-75 p_width
-                                <p class="" style="width: 75%;">on the other hand, we denounce with righteous
-                                    indignation and
-                                    dislike men who are so deguiled and demoralized by the charms of the moment, so
-                                    blinded by desire, that they cannot foresee the pain and trouble</p>
-                                <a href="#" class="text-white btn">read more</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div data-aos="flip-right" class="flex justify-center">
-                                <div>
-                                    <img src="/assest/images/mainRight.svg" alt="" class="relative w-full">
-                                </div>
-                            </div>
+        <main class="sectionSoper h-screen flex items-center">
+            <div class="container text-white mx-auto px-4 containerImage relative top-[20px]">
+                <div class="flex flex-wrap">
+                    <div class="z-10 w-full lg:w-9/12">
+                        <div data-aos="flip-left">
+                            <h1 class="text-3xl font-bold leading-snug mb-4">we build brands that lead & inspire</h1>
+                            <p class="md:w-3/4 mb-4">on the other hand, we denounce with righteous indignation and
+                                dislike men who are so deguiled and demoralized by the charms of the moment, so blinded
+                                by desire, that they cannot foresee the pain and trouble</p>
+                            <a href="#" class="btn bg-orange-500 hover:bg-black px-5 py-2 rounded-lg text-white">read
+                                more</a>
                         </div>
                     </div>
-                </div> -->
+                    <div class="w-full lg:w-3/12">
+                        <div data-aos="flip-right">
+                            <img src="/assest/images/mainRight.svg" alt="Image" class="w-full max-w-xs">
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- end soper -->
+        <h1>welcome</h1>
     </div>
 </body>
 <script src="/assest/js/jquery.min.js"></script>

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $("#mobile-menu-button").click(function () {
+    $("#mobile-menu").toggleClass("hidden");
+  });
   $(window).on("scroll", function () {
     if ($(this).scrollTop() >= 100) {
       $("#navbarScroll").css(

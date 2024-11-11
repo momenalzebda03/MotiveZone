@@ -75,29 +75,30 @@ body main section .container .projectBoxTitle p {
 
 /* end overrite */
 /* start header */
-body main .sectionSoper::after {
+body .sectionSoper::after,
+body .sectionSoper::before,
+body .sectionSoper .containerImage::after {
   content: "";
   position: absolute;
+}
+
+body .sectionSoper::after {
   background-image: url("/assest/images/rotation3.svg");
   width: 90px;
   height: 90px;
-  top: 35%;
+  top: 25%;
   left: 5%;
 }
 
-body .sectionSoper div .container::after {
-  content: "";
-  position: absolute;
+body .sectionSoper .containerImage::after {
   background-image: url("/assest/images/rotation3.svg");
   width: 94px;
   height: 94px;
-  top: 70%;
+  top: 55%;
   left: 5%;
 }
 
-body main .sectionSoper::before {
-  content: "";
-  position: absolute;
+body .sectionSoper::before {
   background: white;
   width: 105%;
   height: 19vh;
@@ -107,38 +108,7 @@ body main .sectionSoper::before {
 }
 
 body .sectionSoper {
-  height: 100vh;
   background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
-}
-
-body nav div div div .divLeft .imgBottom,
-body section nav .container div img {
-  top: -142px;
-}
-
-body section nav .container .collapse .cssNavbar li a:hover,
-body section nav .container .collapse .cssNavbar li .active {
-  color: var(--color_oragn) !important;
-}
-
-.btn {
-  background-color: var(--color_oragn);
-  transition: 0.5s;
-}
-
-.btn:hover {
-  background-color: var(--color_black);
-}
-
-body section .navbar .container button div .divMenu {
-  transition: 0.5s;
-  width: 10px;
-  height: 2px;
-}
-
-body nav div .imageRotationBottom {
-  bottom: 25px;
-  right: -80px;
 }
 
 /* end header */
@@ -271,15 +241,9 @@ body main .sectionFooter .container .row div div div form .btn1:hover {
   body section nav .container .collapse .cssNavbar {
     gap: 100px !important;
   }
-  body .sectionSoper {
-    padding-top: 450px;
-    padding-bottom: 450px;
-    height: 100vh;
-  }
-  body main .sectionSoper::before,
-  body .sectionSoper div .container::after,
-  body main .sectionSoper::after,
+  body .sectionSoper::after,
   body .sectionSoper::before,
+  body .sectionSoper .containerImage::after,
   .divNone {
     display: none;
   }
