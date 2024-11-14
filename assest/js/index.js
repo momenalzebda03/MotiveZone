@@ -13,11 +13,6 @@ $(document).ready(function () {
     }
   });
 
-  $(".nav-link").on("click", function () {
-    $(".nav-link").removeClass("active");
-    $(this).addClass("active");
-  });
-
   var bollen = true;
   $("#divBackgroundColor").on("click", function () {
     if (bollen) {

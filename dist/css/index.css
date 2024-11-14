@@ -22,7 +22,7 @@ body {
   color: var(--color_oragn) !important;
 }
 
-body .sectionSoper div .container::after,
+body .sectionSoper div div::after,
 body main .sectionSoper::after,
 body main .backgroundOverlay,
 body main .sectionFooter {
@@ -45,22 +45,22 @@ body main .sectionFooter {
 
 /* end everyone */
 /* start overrite */
-body main section .container .row div .serviceBox h3,
-body main section .container .serviceBoxTitle h2 {
+body div section div .row div .serviceBox h3,
+body div section div .serviceBoxTitle h2 {
   color: #072753;
 }
 
-body main section .container .serviceBox .serviceLink {
+body div section div .serviceBox .serviceLink {
   color: #1b498a;
 }
 
-body main section .container .serviceBox p,
-body main section .container .serviceBoxTitle p {
+body div section div .serviceBox p,
+body div section div .serviceBoxTitle p {
   color: #28384e;
 }
 
-body main section .container div .projectBox h3,
-body main section .container .projectBoxTitle h2 {
+body div section div div .projectBox h3,
+body div section div .projectBoxTitle h2 {
   color: var(--color_white);
 }
 
@@ -68,8 +68,8 @@ body main section .container .projectBoxTitle h2 {
   color: var(--color_oragn);
 }
 
-body main section .container .projectBox p,
-body main section .container .projectBoxTitle p {
+body main section div .projectBox p,
+body main section div .projectBoxTitle p {
   color: var(--color_white);
 }
 
@@ -77,7 +77,7 @@ body main section .container .projectBoxTitle p {
 /* start header */
 body .sectionSoper::after,
 body .sectionSoper::before,
-body .sectionSoper .containerImage::after {
+body .sectionSoper divImage::after {
   content: "";
   position: absolute;
 }
@@ -90,7 +90,7 @@ body .sectionSoper::after {
   left: 5%;
 }
 
-body .sectionSoper .containerImage::after {
+body .sectionSoper divImage::after {
   background-image: url("/assest/images/rotation3.svg");
   width: 94px;
   height: 94px;
@@ -113,32 +113,32 @@ body .sectionSoper {
 
 /* end header */
 /* start our */
-body main section .container .row div .serviceBox .icon {
+body main section div .row div .serviceBox .icon {
   background-color: rgb(249, 241, 227);
   color: var(--color_oragn);
   transition: 0.5s;
 }
 
-body main section .container .row div .serviceBox .icon:hover {
+body main section div .row div .serviceBox .icon:hover {
   color: var(--color_white);
   background-color: red;
 }
 
 /* end our */
 /* start help */
-body main .sectionHelp .container .divNth div div .textColor {
+body main .sectionHelp div .divNth div div .textColor {
   color: #072753;
 }
 
-body main .sectionHelp .container .divNth:nth-child(even) {
+body main .sectionHelp div .divNth:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-body main .sectionHelp .container .divNth:nth-child(odd) {
+body main .sectionHelp div .divNth:nth-child(odd) {
   flex-direction: row;
 }
 
-body main .sectionHelp .container .divNth div .div_index {
+body main .sectionHelp div .divNth div .div_index {
   z-index: -1;
 }
 
@@ -150,11 +150,11 @@ body main .backgroundOverlay {
 
 /* end ourlatest */
 /* start carla */
-body main section .container .row div .imageWone {
+body main section div .row div .imageWone {
   margin-top: -100px;
 }
 
-body main section .container .row div .pointLoop {
+body main section div .row div .pointLoop {
   color: var(--color_oragn) !important;
   margin-left: -80px;
   margin-top: -45px;
@@ -176,57 +176,57 @@ body main .sectionFooter {
   background-image: url("/assest/images/imageFooter.svg");
 }
 
-body main .sectionFooter .container .row div .pMyColor {
+body main .sectionFooter div .row div .pMyColor {
   color: #9ba4ae;
 }
 
-body main .sectionFooter .container .row .tagHover:hover {
+body main .sectionFooter div .row .tagHover:hover {
   color: var(--color_oragn) !important;
 }
 
-body main .sectionFooter .container .row .divFlexfooter a:hover {
+body main .sectionFooter div .row .divFlexfooter a:hover {
   color: var(--color_oragn);
 }
 
-body main .sectionFooter .container .row div div .imageFacebook {
+body main .sectionFooter div .row div div .imageFacebook {
   background-color: #3a5897;
 }
 
-body main .sectionFooter .container .row div div .imageTwitter {
+body main .sectionFooter div .row div div .imageTwitter {
   background-color: #1da0f1;
 }
 
-body main .sectionFooter .container .row div div .imageYoutue {
+body main .sectionFooter div .row div div .imageYoutue {
   background-color: #c4302b;
 }
 
-body main .sectionFooter .container .row div .iconFooter {
+body main .sectionFooter div .row div .iconFooter {
   padding: 10px;
   transition: 0.5s;
 }
 
-body main .sectionFooter .container .row div .iconFooter:hover {
+body main .sectionFooter div .row div .iconFooter:hover {
   transform: rotate(360deg);
 }
 
-body main section .container .row div div .divCenter {
+body main section div .row div div .divCenter {
   width: 35px;
   height: 35px;
 }
 
-body main .sectionFooter .container .row div div div form .btn1 {
+body main .sectionFooter div .row div div div form .btn1 {
   background-color: #1b498a;
   transition: 0.5s;
 }
 
-body main .sectionFooter .container .row div div div form .btn1:hover {
+body main .sectionFooter div .row div div div form .btn1:hover {
   background-color: var(--color_black);
 }
 
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
-  body section .navbar .container .divBackgroundColor {
+  body section .navbar div .divBackgroundColor {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -238,22 +238,22 @@ body main .sectionFooter .container .row div div div form .btn1:hover {
     z-index: -1;
     background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
   }
-  body section nav .container .collapse .cssNavbar {
+  body section nav div .collapse .cssNavbar {
     gap: 100px !important;
   }
   body .sectionSoper::after,
   body .sectionSoper::before,
-  body .sectionSoper .containerImage::after,
+  body .sectionSoper divImage::after,
   .divNone {
     display: none;
   }
-  .sectionSoper div .container .row div,
+  .sectionSoper div div .row div,
   .sectionHelp,
-  .section_ourlatest .container .row .divShow,
-  .sectionFooter .container .row .divFlexfooter {
+  .section_ourlatest div .row .divShow,
+  .sectionFooter div .row .divFlexfooter {
     text-align: center;
   }
-  .sectionHelp .container .row .divRight img {
+  .sectionHelp div .row .divRight img {
     width: 100%;
   }
   .pWidth {
