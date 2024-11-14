@@ -45,17 +45,17 @@ body main .sectionFooter {
 
 /* end everyone */
 /* start overrite */
-body div section div .row div .serviceBox h3,
-body div section div .serviceBoxTitle h2 {
+body section div div div div .serviceBox div h3,
+body section div .serviceBoxTitle h2 {
   color: #072753;
 }
 
-body div section div .serviceBox .serviceLink {
+body div section div .serviceBox div .serviceLink {
   color: #1b498a;
 }
 
-body div section div .serviceBox p,
-body div section div .serviceBoxTitle p {
+body section div div div div .serviceBox span,
+body section div .serviceBoxTitle span {
   color: #28384e;
 }
 
@@ -75,53 +75,32 @@ body main section div .projectBoxTitle p {
 
 /* end overrite */
 /* start header */
-body .sectionSoper::after,
-body .sectionSoper::before,
-body .sectionSoper divImage::after {
-  content: "";
-  position: absolute;
-}
-
 body .sectionSoper::after {
-  background-image: url("/assest/images/rotation3.svg");
   width: 90px;
   height: 90px;
   top: 25%;
   left: 5%;
 }
 
-body .sectionSoper divImage::after {
-  background-image: url("/assest/images/rotation3.svg");
+body .sectionSoper .containerImage::after {
   width: 94px;
   height: 94px;
   top: 55%;
-  left: 5%;
+  left: -2%;
 }
 
 body .sectionSoper::before {
-  background: white;
   width: 105%;
   height: 19vh;
   left: -3%;
   top: 91%;
-  transform: rotate(-5deg);
-}
-
-body .sectionSoper {
-  background: linear-gradient(155deg, rgb(30, 77, 141), rgb(56, 113, 166));
 }
 
 /* end header */
 /* start our */
-body main section div .row div .serviceBox .icon {
+body section div div div div .serviceBox .icon {
   background-color: rgb(249, 241, 227);
   color: var(--color_oragn);
-  transition: 0.5s;
-}
-
-body main section div .row div .serviceBox .icon:hover {
-  color: var(--color_white);
-  background-color: red;
 }
 
 /* end our */
@@ -241,13 +220,6 @@ body main .sectionFooter div .row div div div form .btn1:hover {
   body section nav div .collapse .cssNavbar {
     gap: 100px !important;
   }
-  body .sectionSoper::after,
-  body .sectionSoper::before,
-  body .sectionSoper divImage::after,
-  .divNone {
-    display: none;
-  }
-  .sectionSoper div div .row div,
   .sectionHelp,
   .section_ourlatest div .row .divShow,
   .sectionFooter div .row .divFlexfooter {
