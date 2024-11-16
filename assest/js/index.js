@@ -12,25 +12,4 @@ $(document).ready(function () {
       $("#navbarScroll").css("background", "transparent");
     }
   });
-
-  var bollen = true;
-  $("#divBackgroundColor").on("click", function () {
-    if (bollen) {
-      $("#diMenu1").css({
-        transform: "translateY(3px) rotate(45deg)",
-      });
-      $("#diMenu2").hide();
-      $("#diMenu3").css({
-        transform: "translateY(-3px) rotate(-45deg)",
-      });
-      $("#navbarSupportedContent").css("right", "0");
-      bollen = false;
-    } else {
-      $("#diMenu1").css("transform", "rotate(0deg)");
-      $("#diMenu2").show();
-      $("#diMenu3").css("transform", "rotate(0deg)");
-      $("#navbarSupportedContent").css("right", "-900px");
-      bollen = true;
-    }
-  });
 });

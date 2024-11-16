@@ -22,17 +22,9 @@ body {
   color: var(--color_oragn) !important;
 }
 
-body .sectionSoper div div::after,
-body main .sectionSoper::after,
-body main .backgroundOverlay,
-body main .sectionFooter {
+body .sectionFooter {
   background-size: cover;
   background-position: center;
-}
-
-.imageMySmoll {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .tagPointer {
@@ -44,36 +36,6 @@ body main .sectionFooter {
 }
 
 /* end everyone */
-/* start overrite */
-body section div div div .serviceBox div h3,
-body section div .serviceBoxTitle h2 {
-  color: #072753;
-}
-
-body div section div .serviceBox div .serviceLink {
-  color: #1b498a;
-}
-
-body section div div div .serviceBox span,
-body section div .serviceBoxTitle span {
-  color: #28384e;
-}
-
-body div section div div .projectBox h3,
-body div section div .projectBoxTitle h2 {
-  color: var(--color_white);
-}
-
-.projectLink {
-  color: var(--color_oragn);
-}
-
-body main section div .projectBox p,
-body main section div .projectBoxTitle p {
-  color: var(--color_white);
-}
-
-/* end overrite */
 /* start header */
 body .sectionSoper::after {
   width: 90px;
@@ -105,29 +67,18 @@ body section div div div .serviceBox .icon {
 
 /* end our */
 /* start help */
-body main .sectionHelp div .divNth div div .textColor {
-  color: #072753;
-}
-
-body main .sectionHelp div .divNth:nth-child(even) {
+body .sectionHelp div .divNth:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-body main .sectionHelp div .divNth:nth-child(odd) {
+body .sectionHelp div .divNth:nth-child(odd) {
   flex-direction: row;
 }
-
-body main .sectionHelp div .divNth div .div_index {
-  z-index: -1;
+body .sectionHelp div .divNth:nth-child(odd) .divFlexChild {
+  justify-content: flex-end;
 }
 
 /* end help */
-/* start ourlatest */
-body main .backgroundOverlay {
-  background-image: url("/assest/images/BG.svg");
-}
-
-/* end ourlatest */
 /* start carla */
 body main section div .row div .imageWone {
   margin-top: -100px;
@@ -220,16 +171,13 @@ body main .sectionFooter div .row div div div form .btn1:hover {
   body section nav div .collapse .cssNavbar {
     gap: 100px !important;
   }
-  .sectionHelp,
-  .section_ourlatest div .row .divShow,
+  body .sectionHelp,
+  .sectionOurlatest div .row .divShow,
   .sectionFooter div .row .divFlexfooter {
     text-align: center;
   }
-  .sectionHelp div .row .divRight img {
+  body .sectionHelp div .row .divRight img {
     width: 100%;
-  }
-  .pWidth {
-    width: 100% !important;
   }
 }
 /* end media *//*# sourceMappingURL=index.css.map */
