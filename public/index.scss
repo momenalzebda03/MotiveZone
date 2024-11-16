@@ -28,10 +28,6 @@ body .sectionFooter {
     background-position: center;
 }
 
-.tagPointer {
-    cursor: pointer;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -60,13 +56,6 @@ body .sectionSoper::before {
 }
 
 /* end header */
-/* start our */
-body section div div div .serviceBox .icon {
-    // background-color: rgb(249, 241, 227);
-    // color: var(--color_oragn);
-}
-
-/* end our */
 /* start help */
 body .sectionHelp div .divNth:nth-child(even) {
     flex-direction: row-reverse;
@@ -81,28 +70,6 @@ body .sectionHelp div .divNth:nth-child(odd) {
 }
 
 /* end help */
-/* start carla */
-body main section div .row div .imageWone {
-    margin-top: -100px;
-}
-
-body main section div .row div .pointLoop {
-    color: var(--color_oragn) !important;
-    margin-left: -80px;
-    margin-top: -45px;
-}
-
-body main section div div div .row div div div .divBorder {
-    border: 2px solid var(--color_oragn);
-    width: 45px;
-    height: 45px;
-}
-
-body main section div div div .row div div div .divBorder:hover {
-    background-color: var(--color_black);
-}
-
-/* end carla */
 /* start footer */
 body main .sectionFooter {
     background-image: url("/assest/images/imageFooter.svg");
@@ -182,10 +149,6 @@ body main .sectionFooter div .row div div div form .btn1:hover {
     body .sectionHelp div .row .divRight img {
         width: 100%;
     }
-
-    // .pWidth {
-    //     width: 100% !important;
-    // }
 }
 
 /* end media */
