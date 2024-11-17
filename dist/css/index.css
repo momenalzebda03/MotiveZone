@@ -14,23 +14,6 @@ body {
   --color_black: black;
 }
 
-.myIndex {
-  z-index: 3;
-}
-
-.projectLink {
-  color: var(--color_oragn) !important;
-}
-
-body .sectionFooter {
-  background-size: cover;
-  background-position: center;
-}
-
-.tagPointer {
-  cursor: pointer;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -59,13 +42,6 @@ body .sectionSoper::before {
 }
 
 /* end header */
-/* start our */
-body section div div div .serviceBox .icon {
-  background-color: rgb(249, 241, 227);
-  color: var(--color_oragn);
-}
-
-/* end our */
 /* start help */
 body .sectionHelp div .divNth:nth-child(even) {
   flex-direction: row-reverse;
@@ -79,80 +55,7 @@ body .sectionHelp div .divNth:nth-child(odd) .divFlexChild {
 }
 
 /* end help */
-/* start carla */
-body main section div .row div .imageWone {
-  margin-top: -100px;
-}
-
-body main section div .row div .pointLoop {
-  color: var(--color_oragn) !important;
-  margin-left: -80px;
-  margin-top: -45px;
-}
-
-body main section div div div .row div div div .divBorder {
-  border: 2px solid var(--color_oragn);
-  width: 45px;
-  height: 45px;
-}
-
-body main section div div div .row div div div .divBorder:hover {
-  background-color: var(--color_black);
-}
-
-/* end carla */
 /* start footer */
-body main .sectionFooter {
-  background-image: url("/assest/images/imageFooter.svg");
-}
-
-body main .sectionFooter div .row div .pMyColor {
-  color: #9ba4ae;
-}
-
-body main .sectionFooter div .row .tagHover:hover {
-  color: var(--color_oragn) !important;
-}
-
-body main .sectionFooter div .row .divFlexfooter a:hover {
-  color: var(--color_oragn);
-}
-
-body main .sectionFooter div .row div div .imageFacebook {
-  background-color: #3a5897;
-}
-
-body main .sectionFooter div .row div div .imageTwitter {
-  background-color: #1da0f1;
-}
-
-body main .sectionFooter div .row div div .imageYoutue {
-  background-color: #c4302b;
-}
-
-body main .sectionFooter div .row div .iconFooter {
-  padding: 10px;
-  transition: 0.5s;
-}
-
-body main .sectionFooter div .row div .iconFooter:hover {
-  transform: rotate(360deg);
-}
-
-body main section div .row div div .divCenter {
-  width: 35px;
-  height: 35px;
-}
-
-body main .sectionFooter div .row div div div form .btn1 {
-  background-color: #1b498a;
-  transition: 0.5s;
-}
-
-body main .sectionFooter div .row div div div form .btn1:hover {
-  background-color: var(--color_black);
-}
-
 /* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
@@ -171,8 +74,6 @@ body main .sectionFooter div .row div div div form .btn1:hover {
   body section nav div .collapse .cssNavbar {
     gap: 100px !important;
   }
-  body .sectionHelp,
-  .sectionOurlatest div .row .divShow,
   .sectionFooter div .row .divFlexfooter {
     text-align: center;
   }
